@@ -33,20 +33,17 @@ You can define the content of the web page navigation bar simply and quickly. In
 
 It should be noted that the order of the navigation bar is in ascending order of the size of `weight`.
 
-## Homepage
-
-By default, Eureka's homepage consists of two pictures and a slogan. You can easily customize the content of the picture and the slogan. In `config/_default/params.toml`, you can customize the content of the `hero` module. The parameters in the `hero` module are as follows:
-
-- **slogan(string)**：Homepage slogan.
-- **imgLeft(string)**：For the image on the left side of the homepage, please refer to [Load Picture](../content-management/#image-loading) for the setting method.
-- **imgRight(string)**：For the image on the right side of the homepage, please refer to [Load Picture](../content-management/#image-loading) for the setting method.
-
 ## Math
 
 Eureka supports the use of KaTeX to render LaTeX mathematical formulas. If you need to configure KaTeX, you only need to configure the `[math]` in `config/_default/params.toml`.
 
-- **handler(string)**: The optional value is katex, leave it blank to disable this feature.
-- **math.katex(object)**: KaTeX related configuration. For specific optional values, please refer to: [Options · KaTeX](https://katex.org/docs/options.html). Since Eureka uses KaTeX's auto-render extension, the `displayMode` property in the link will be ignored.
+**math.handler(string)**
+
+The optional value is katex, leave it blank to disable this feature.
+
+**math.katex(object)**
+
+KaTeX related configuration. For specific optional values, please refer to: [Options · KaTeX](https://katex.org/docs/options.html). Since Eureka uses KaTeX's auto-render extension, the `displayMode` property in the link will be ignored.
 
 Eureka also supports independent configuration of whether to render math formula for each page or section. For example, you have a project with the following file structure:
 
@@ -92,25 +89,81 @@ Currently Eureka supports two types of comment systems, Disqus and Commento. To 
 
 Some basic configurations are defined in `config/_default/config.toml` to help you set up some basic functions of the website. This chapter will not cover the content already contained in the previous article.
 
-- **baseURL(string)**: The root domain name of the site.
-- **title(string)**: Site title.
-- **theme(string)**: The theme used on the site.
-- **paginate(int)**: The number of content per page.
-- **copyright(string)**: The site copyright statement will appear at the bottom of the page.
-- **enableGitInfo(bool)**: Whether to use git information. The default is `false`.
-- **enableEmoji(bool)**: Whether to use emoji, the default is `false`.
-- **summaryLength(int)**: Summary length, the default is 70.
-- **defaultContentLanguage(string)**: The language code of the default language.
-- **hasCJKLanguage(bool)**: Whether to include Chinese, Japanese, and Korean content, the default is `false`.
-- **defaultContentLanguageInSubdir(bool)**: Whether the default language is under the sub-link when multilingual, for example, when the default language is `en`, `/` will be redirected to `/en/`.
-- **googleAnalytics(string)**: Google Analytics code. Starting from `0.2.1`, Google Analytics is only generated in the production environment. If you want to preview in the development environment, you need to set the Hugo environment variable to `production`.
-- **markup.tableOfContents(object)**: Table of contents rendering method.
-  - **startLevel(int)**: Start title level of the table of contents.
-  - **endLevel(int)**: End title level of the table of contents.
-  - **ordered(bool)**: Whether to generate an ordered list.
-- **taxonomies(object)**: All taxonomies in the website.
-- **build(object)**: Build settings.
-  - **useResourceCacheWhen(string)**: Use cache files for rendering. If there are no special circumstances, please keep `always`.
+**baseURL(string)**
+
+The root domain name of the site.
+
+**title(string)**
+
+Site title.
+
+**theme(string)**
+
+The theme used on the site.
+
+**paginate(int)**
+
+The number of content per page.
+
+**copyright(string)**
+
+The site copyright statement will appear at the bottom of the page.
+
+**enableGitInfo(bool)**
+
+Whether to use git information. The default is `false`.
+
+**enableEmoji(bool)**
+
+Whether to use emoji, the default is `false`.
+
+**summaryLength(int)**
+
+Summary length, the default is 70.
+
+**defaultContentLanguage(string)**
+
+The language code of the default language.
+
+**hasCJKLanguage(bool)**
+
+Whether to include Chinese, Japanese, and Korean content, the default is `false`.
+
+**defaultContentLanguageInSubdir(bool)**
+
+Whether the default language is under the sub-link when multilingual, for example, when the default language is `en`, `/` will be redirected to `/en/`.
+
+**googleAnalytics(string)**
+
+Google Analytics code. Starting from `0.2.1`, Google Analytics is only generated in the production environment. If you want to preview in the development environment, you need to set the Hugo environment variable to `production`.
+
+**markup.tableOfContents(object)**
+
+Table of contents rendering method.
+
+**markup.tableOfContents.startLevel(int)**
+
+Start title level of the table of contents.
+
+**markup.tableOfContents.endLevel(int)**
+
+End title level of the table of contents.
+
+**markup.tableOfContents.ordered(bool)**
+
+Whether to generate an ordered list.
+
+**taxonomies(object)**
+
+All taxonomies in the website.
+
+**build(object)**
+
+Build settings.
+
+**build.useResourceCacheWhen(string)**
+
+Use cache files for rendering. If there are no special circumstances, please keep `always`.
 
 In addition, Hugo also has some predefined basic configurations. For details, please refer to [Configure Hugo](https://gohugo.io/getting-started/configuration/).
 
@@ -118,16 +171,53 @@ In addition, Hugo also has some predefined basic configurations. For details, pl
 
 In addition to the basic configuration, you can also set some params provided by Eureka. This chapter will not cover the content already contained in the previous article.
 
-- **mainSections(list)**：The types in the list will be displayed on the homepage.
-- **description(string)**：The description of the site.
-- **repoURL(string)**：Project repository URL.
-- **repoEditURL(string)**：Edit the URL of the current page content, if the project repository is on Github, it can be empty.
-- **dateFormat(string)**: The format of the date displayed on the website. The config should meet the [corresponding format](https://gohugo.io/functions/format/#gos-layout-string) of Golang.
-- **colorScheme(string)**: The default color scheme of the website. Optional values are `auto`, `light` and `dark`. Leave blank as `auto`.
-- **siteType(string)**：Site type.
-- **icon(string)**：Site icon, please refer to [Image Loading](../content-management/#image-loading)。
-- **publisherName(string)**：Publisher name.
-- **publisherLogo(string)**：Publisher icon, when empty is the site icon.
+**mainSections(list)**
+
+The types in the list will be displayed on the homepage.
+
+**description(string)**
+
+The description of the site.
+
+**repoURL(string)**
+
+Project repository URL.
+
+**repoEditURL(string)**
+
+Edit the URL of the current page content, if the project repository is on Github, it can be empty.
+
+**titleSeparator(string/list)**
+
+Set the separator of the page title. The default value is `|`.
+
+If you only need a single-level separator, enter it as a string. For example, enter `titleSeparator = "-"` and the title of the page will be similar to `Eureka - Tech Mansion`.
+
+If multiple levels of separators are required, enter them as a list. For example, enter `titleSeparator = ["|", "-"]` and it will be displayed as `Homepage Configuration - Eureka | Tech Mansion` in titles which requires multiple levels. Others will display as `Eureka | Tech Mansion`.
+
+**dateFormat(string)**
+
+The format of the date displayed on the website. The config should meet the [corresponding format](https://gohugo.io/functions/format/#gos-layout-string) of Golang.
+
+**colorScheme(string)**
+
+The default color scheme of the website. Optional values are `auto`, `light` and `dark`. Leave blank as `auto`.
+
+**siteType(string)**
+
+Site type.
+
+**icon(string)**
+
+Site icon, please refer to [Image Loading](../content-management/#image-loading).
+
+**publisherName(string)**
+
+Publisher name.
+
+**publisherLogo(string)**
+
+Publisher icon, when empty is the site icon.
 
 ---
 
