@@ -39,6 +39,14 @@ When installing with Git Submodule, you only need to execute under the project l
 git submodule add https://github.com/wangchucheng/hugo-eureka.git themes/eureka
 ```
 
+The default content at this time is the main branch. We recommend to use versions in [Releases](https://github.com/wangchucheng/hugo-eureka/releases), as the main branch may contain unstable features or even errors. To checkout versions, you only need to:
+
+```shell
+cd themes/eureka
+git checkout <eureka_version>
+git pull
+```
+
 Next, copy the `config` folder in [exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite) to the project root directory, and check the contents of the `config` folder and configure it. After configuration, delete the original `config.toml` file.
 
 After completing the above steps, use the following command to preview the project in the browser:
