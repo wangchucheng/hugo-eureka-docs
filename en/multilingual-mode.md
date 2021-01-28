@@ -1,18 +1,17 @@
-+++
-title = "Multilingual Mode"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-21T23:11:23+08:00"
-lastmod = "2020-10-21T23:11:23+08:00"
-draft = false
-
-weight = 5
-+++
+---
+title: Multilingual Mode
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-21T23:11:23+08:00'
+lastmod: '2020-10-21T23:11:23+08:00'
+draft: false
+weight: 5
+---
 
 In addition to [Content Management](content-management) and [Customize Eureka](customization) described above, Eureka also supports Multilingual Mode. Multilingual Mode will lead you to understand how to build a multilingual site.
 
@@ -22,11 +21,11 @@ In addition to [Content Management](content-management) and [Customize Eureka](c
 
 First we need to make some modifications to the configuration file to use the multilingual mode.
 
-Uncomment the commented content in `config/_default/languages.toml`. Specifically, for the `contentDir` property of the default language, uncomment it and move all the contents in the original `content` folder to the `content/<language_code>/` folder.
+Uncomment the commented content in `config/_default/languages.yaml`. Specifically, for the `contentDir` property of the default language, uncomment it and move all the contents in the original `content` folder to the `content/<language_code>/` folder.
 
 Next, uncomment the configuration of other languages, where you can modify the value of a specific configuration property, just like the `title` in the example.
 
-After that, we need to continue to modify the relevant content of the navigation bar. First, please create a new `menus.<language_code>.toml` file in the `config/_default/` folder, and copy the content in `menus.toml` and make corresponding settings.
+After that, we need to continue to modify the relevant content of the navigation bar. First, please create a new `menus.<language_code>.yaml` file in the `config/_default/` folder, and copy the content in `menus.yaml` and make corresponding settings.
 
 Finally, there are some `i18n` strings in Eureka. The languages currently officially supported by Eureka are:
  

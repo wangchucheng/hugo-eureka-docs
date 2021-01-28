@@ -1,17 +1,17 @@
-+++
-title = "Eureka"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-19T22:47:34+08:00"
-lastmod = "2020-10-19T22:47:34+08:00"
-featuredImage = "https://i.loli.net/2020/11/07/B6GZn1V2AS8XYIT.jpg"
-draft = false
-+++
+---
+title: Eureka
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-19T22:47:34+08:00'
+lastmod: '2020-10-19T22:47:34+08:00'
+featuredImage: 'https://i.loli.net/2020/11/07/B6GZn1V2AS8XYIT.jpg'
+draft: false
+---
 
 Eureka is a feature-rich and highly customizable [Hugo](https://gohugo.io/) theme. Using Eureka allows you to customize and deploy your website quickly and easily.
 

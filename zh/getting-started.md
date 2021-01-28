@@ -1,18 +1,17 @@
-+++
-title = "入门"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-19T22:50:23+08:00"
-lastmod = "2020-10-19T22:50:23+08:00"
-draft = false
-
-weight = 1
-+++
+---
+title: 入门
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-19T22:50:23+08:00'
+lastmod: '2020-10-19T22:50:23+08:00'
+draft: false
+weight: 1
+---
 
 在本文中你将了解到如何快速搭建一个Eureka主题的Hugo网站。
 
@@ -97,20 +96,20 @@ hugo new posts/hello-world.md
 
 这会帮助你在`content/post`文件夹下生成一篇内容如下的文件。
 
-```toml
-+++
-title = "Hello World"
-description = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-20T10:30:48+08:00"
-lastmod = "2020-10-20T10:30:48+08:00"
-featuredImage = ""
-draft = false
-+++
+```yaml
+---
+title: Hello World
+description:
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-20T10:30:48+08:00'
+lastmod: '2020-10-20T10:30:48+08:00'
+featuredImage: ''
+draft: false
+---
 ```
 
 你可以对其中的值进行修改或在文件最后的`+++`后开始编写你的正文内容。
@@ -129,8 +128,8 @@ Eureka提供的全部内容类型可以参考[archetypes](https://github.com/wan
 
 由于Eureka致力于提供一个高度可定制且功能丰富的主题，因此我们将自动生成的`config.toml`文件替换为`config`文件夹以提供更清晰的结构。你可以修改配置文件中的任意内容：
 
-```toml
-title = "My Own Title"
+```yaml
+title: My Own Title
 ```
 
 ## 生成网站

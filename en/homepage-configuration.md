@@ -1,18 +1,17 @@
-+++
-title = "Homepage Configuration"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-12-27T17:50:15+08:00"
-lastmod = "2020-12-27T17:50:15+08:00"
-draft = false
-
-weight = 2
-+++
+---
+title: Homepage Configuration
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-12-27T17:50:15+08:00'
+lastmod: '2020-12-27T17:50:15+08:00'
+draft: false
+weight: 2
+---
 
 In [Getting Started](../getting-started), I believe you have successfully run the Hugo website using Eureka theme. In this article you will learn how to configure the website homepage.
 

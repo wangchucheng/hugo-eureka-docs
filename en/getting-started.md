@@ -1,18 +1,17 @@
-+++
-title = "Getting Started"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-19T22:50:23+08:00"
-lastmod = "2020-10-19T22:50:23+08:00"
-draft = false
-
-weight = 1
-+++
+---
+title: Getting Started
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-19T22:50:23+08:00'
+lastmod: '2020-10-19T22:50:23+08:00'
+draft: false
+weight: 1
+---
 
 In Getting Started you will learn how to quickly build a Hugo site with Eureka.
 
@@ -95,20 +94,20 @@ hugo new posts/hello-world.md
 
 This will help you generate a file with the following content in the `content/post` folder.
 
-```toml
-+++
-title = "Hello World"
-description = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-20T10:30:48+08:00"
-lastmod = "2020-10-20T10:30:48+08:00"
-featuredImage = ""
-draft = false
-+++
+```yaml
+---
+title: Hello World
+description:
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-20T10:30:48+08:00'
+lastmod: '2020-10-20T10:30:48+08:00'
+featuredImage: ''
+draft: false
+---
 ```
 
 You can modify the value or start writing your body content after the `+++` at the end of the file.
@@ -127,8 +126,8 @@ For all content types provided by Eureka, please refer to [archetypes](https://g
 
 Since Eureka is committed to providing a highly customizable and feature-rich theme, we replaced the automatically generated `config.toml` file with the `config` folder to provide a clearer structure. You can modify any content in the configuration file:
 
-```toml
-title = "My Own Title"
+```yaml
+title: My Own Title
 ```
 
 ## Generate Site

@@ -1,18 +1,17 @@
-+++
-title = "内容管理"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-20T10:30:48+08:00"
-lastmod = 2020-11-22T11:54:28+08:00
-draft = false
-
-weight = 3
-+++
+---
+title: 内容管理
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-20T10:30:48+08:00'
+lastmod: 2020-11-22T03:54:28.000Z
+draft: false
+weight: 3
+---
 
 在[主页配置](../homepage-configuration)中，你已经成功地构建了网站主页。接下来我们将添加一些内容。本文将带领你了解网站内容结构及编辑技巧。
 
@@ -91,17 +90,17 @@ hugo new -k authors authors/<your_author>
 
 Hugo的内容文件主要由两部分组成，文件最前部的Front Matter及之后的正文部分。Front Matter可以使用toml，yaml或json形式。正文部分则遵循Markdown语法。
 
-```toml
-+++
-title = "Hello World"
-description = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
+```yaml
+---
+title: Hello World
+description:
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
 ...
-+++
+---
 ```
 
 以上为一个基本的Front Matter的样式。你可以通过其设置各类属性。
@@ -188,14 +187,14 @@ Eureka中有一些需要加载视频的地方，例如精选视频。Eureka提�
 
 对于本地存储的视频，你可以将视频存储于项目根目录下的`static`文件夹，并在配置文件中填写其相对路径。例如将`example.mp4`存储于`assets/videos/example.mp4`，你只需将Front Matter中对应属性（例如featuredVideo）设置为：
 
-```toml
-featuredVideo = "videos/example.mp4"
+```yaml
+featuredVideo: videos/example.mp4
 ```
 
 对于视频网站的分享视频，你只需将Front Matter对应属性（例如featuredVideo）的值设置为视频播放器url即可。需要注意的是，视频播放器url并非视频网站的网址，而是其嵌入代码（一般为iframe）中`src`属性的值。
 
-```toml
-featuredVideo = "https://example.com"
+```yaml
+featuredVideo: https://example.com
 ```
 
 ## 加载图片
@@ -208,16 +207,16 @@ Eureka中有许多需要加载图片的地方，例如主页图片或作者头�
 
 对于本地存储的图片，你可以选择将图片存储于项目根目录下的`assets`或`static`文件夹，并在配置文件中填写其相对路径。例如将`example.jpg`存储于`assets/images/example.jpg`，你只需将配置文件设置为：
 
-```toml
-imgLeft = "images/example.jpg"
+```yaml
+imgLeft: images/example.jpg
 ```
 
 需要注意的是，`icon`属性只能存储于`assets`文件夹中。
 
 对于外链图片，你只需将配置文件对应属性的值设置为图片url即可。
 
-```toml
-imgLeft = "https://example.com"
+```yaml
+imgLeft: https://example.com
 ```
 
 ### 在Front Matter中添加图片

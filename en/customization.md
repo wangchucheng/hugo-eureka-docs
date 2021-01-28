@@ -1,20 +1,19 @@
-+++
-title = "Customize Eureka"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  2020-10-20T23:14:21+08:00
-lastmod = 2020-11-22T11:33:26+08:00
-draft = false
-
-weight = 4
-
-aliases = ["customize-eureka"]
-+++
+---
+title: Customize Eureka
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: 2020-10-20T15:14:21.000Z
+lastmod: 2020-11-22T03:33:26.000Z
+draft: false
+weight: 4
+aliases:
+  - customize-eureka
+---
 
 In [Content Management](../content-management), you have already learned about all kinds of content of Eureka. Next, we will introduce Eureka's customization options. Customize Eureka will lead you to understand how Eureka is configured and its options.
 
@@ -24,11 +23,11 @@ In [Content Management](../content-management), you have already learned about a
 
 You can define the content of the web page navigation bar simply and quickly. In `config/_default/menus.toml`, there are multiple `main` modules, just modify them according to the content in the sample file. For example, adding the archive page in the navigation bar only needs to add the following content:
 
-```toml
-[[main]]
-  name = "Archive"
-  url = "/archive/"
-  weight = 40
+```yaml
+main:
+  - name: Archive
+    url: /archive/
+    weight: 40
 ```
 
 It should be noted that the order of the navigation bar is in ascending order of the size of `weight`.
@@ -72,17 +71,15 @@ You can set the value of the `math` attribute in the Front Matter of the file in
 
 Currently Eureka supports two types of comment systems, Disqus and Commento. To activate the comment system, just modify the content related to `[comment]` in `config/_default/params.toml`. Take Disqus as an example, if you need to activate Disqus, you only need to modify the content as follows:
 
-```toml
-[comment]
+```yaml
+comment:
   # Options: disqus and commento.
-  platform = "disqus"
-
-  [comment.disqus]
-    shortname = "<your_shortname>"
-
-  [comment.commento]
-    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty. 
-    url = ""
+  platform: disqus
+  disqus:
+    shortname: <your_shortname>
+  commento:
+    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
+    url: ''
 ```
 
 ## Basic Config File
@@ -191,9 +188,9 @@ Edit the URL of the current page content, if the project repository is on Github
 
 Set the separator of the page title. The default value is `|`.
 
-If you only need a single-level separator, enter it as a string. For example, enter `titleSeparator = "-"` and the title of the page will be similar to `Eureka - Tech Mansion`.
+If you only need a single-level separator, enter it as a string. For example, enter `titleSeparator: '-'` and the title of the page will be similar to `Eureka - Tech Mansion`.
 
-If multiple levels of separators are required, enter them as a list. For example, enter `titleSeparator = ["|", "-"]` and it will be displayed as `Homepage Configuration - Eureka | Tech Mansion` in titles which requires multiple levels. Others will display as `Eureka | Tech Mansion`.
+If multiple levels of separators are required, enter them as a list. For example, enter `titleSeparator: ['|', '-']` and it will be displayed as `Homepage Configuration - Eureka | Tech Mansion` in titles which requires multiple levels. Others will display as `Eureka | Tech Mansion`.
 
 **dateFormat(string)**
 

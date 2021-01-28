@@ -1,20 +1,19 @@
-+++
-title = "Update Eureka"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-21T23:58:12+08:00"
-lastmod = "2020-10-21T23:58:12+08:00"
-draft = false
-
-weight = 6
-
-aliases = ["update-eureka"]
-+++
+---
+title: Update Eureka
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-21T23:58:12+08:00'
+lastmod: '2020-10-21T23:58:12+08:00'
+draft: false
+weight: 6
+aliases:
+  - update-eureka
+---
 
 Update Eureka will introduce different ways to update Eureka.
 
@@ -82,7 +81,7 @@ Use the following command to initialize Hugo Modules:
 hugo mod init <module_name>
 ```
 
-Finally, comment `theme = "eureka"` in `config/_default/config.toml` and uncomment `theme = "github.com/wangchucheng/hugo-eureka"`.
+Finally, comment `theme: eureka` in `config/_default/config.yaml` and uncomment `theme: github.com/wangchucheng/hugo-eureka`.
 
 At this point you have completed the migration from Git Submodule to Hugo Modules.
 

@@ -1,20 +1,19 @@
-+++
-title = "定制Eureka"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  2020-10-20T23:14:21+08:00
-lastmod = 2020-11-22T11:33:26+08:00
-draft = false
-
-weight = 4
-
-aliases = ["customize-eureka"]
-+++
+---
+title: 定制Eureka
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: 2020-10-20T15:14:21.000Z
+lastmod: 2020-11-22T03:33:26.000Z
+draft: false
+weight: 4
+aliases:
+  - customize-eureka
+---
 
 在[内容管理](../content-management)中，你已经了解了Eureka的各类内容。接下来我们将介绍Eureka的定制化选项。本文将带领你了解Eureka的配置方式及其选项。
 
@@ -24,11 +23,11 @@ aliases = ["customize-eureka"]
 
 你可以简单快捷的定义网页导航栏的内容。在`config/_default/menus.toml`中，有多个`main`模块，只需根据示例文件中的内容进行修改即可。例如在导航栏加入archive页只需加入以下内容即可：
 
-```toml
-[[main]]
-  name = "Archive"
-  url = "/archive/"
-  weight = 40
+```yaml
+main:
+  - name: Archive
+    url: /archive/
+    weight: 40
 ```
 
 需要注意的是，导航栏的顺序按`weight`的大小升序排列。
@@ -72,17 +71,15 @@ content/
 
 目前Eureka支持Disqus和Commento两类评论系统。若需激活评论系统，只需修改`config/_default/params.toml`中`[comment]`相关内容。以Disqus为例，如需激活Disqus，只需将内容按如下方式修改即可：
 
-```toml
-[comment]
+```yaml
+comment:
   # Options: disqus and commento.
-  platform = "disqus"
-
-  [comment.disqus]
-    shortname = "<your_shortname>"
-
-  [comment.commento]
-    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty. 
-    url = ""
+  platform: disqus
+  disqus:
+    shortname: <your_shortname>
+  commento:
+    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
+    url: ''
 ```
 
 ## 基本配置文件
@@ -191,9 +188,9 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 设置网页标题的分隔符。默认值为`|`。
 
-如只需单层次的分隔符则以字符串形式输入。例如输入`titleSeparator = "-"`则网页标题将类似于`Eureka - 技术公馆`。
+如只需单层次的分隔符则以字符串形式输入。例如输入`titleSeparator: '-'`则网页标题将类似于`Eureka - 技术公馆`。
 
-如需多层次的分隔符则以列表形式输入，例如输入`titleSeparator = ["|", "-"]`则在需要多层次的标题中将显示为`主页配置 - Eureka | 技术公馆`。其他位置将显示为`Eureka | 技术公馆`。
+如需多层次的分隔符则以列表形式输入，例如输入`titleSeparator: ['|', '-']`则在需要多层次的标题中将显示为`主页配置 - Eureka | 技术公馆`。其他位置将显示为`Eureka | 技术公馆`。
 
 **dateFormat(string)**
 

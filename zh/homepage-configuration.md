@@ -1,18 +1,17 @@
-+++
-title = "主页配置"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-12-27T17:50:15+08:00"
-lastmod = "2020-12-27T17:50:15+08:00"
-draft = false
-
-weight = 2
-+++
+---
+title: 主页配置
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-12-27T17:50:15+08:00'
+lastmod: '2020-12-27T17:50:15+08:00'
+draft: false
+weight: 2
+---
 
 在[入门](../getting-started/)中，相信你已经成功运行了使用Eureka主题的Hugo网站。在本文中你将了解到如何自由配置网站主页。
 

@@ -1,18 +1,17 @@
-+++
-title = "多语言模式"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-21T23:11:23+08:00"
-lastmod = "2020-10-21T23:11:23+08:00"
-draft = false
-
-weight = 5
-+++
+---
+title: 多语言模式
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-21T23:11:23+08:00'
+lastmod: '2020-10-21T23:11:23+08:00'
+draft: false
+weight: 5
+---
 
 除了前文的[内容管理](../content-management/)以及[定制Eureka](../customization/)，Eureka也支持多语言模式。本文将带领你了解如何构建一个多语言网站。
 
@@ -22,11 +21,11 @@ weight = 5
 
 首先我们需要对配置文件进行一些修改以使用多语言功能。
 
-将`config/_default/languages.toml`中注释的内容取消注释。具体而言，对于默认语言的`contentDir`属性，取消其注释并将原来`content`文件夹中的所有内容移至`content/<language_code>/`文件夹中。
+将`config/_default/languages.yaml`中注释的内容取消注释。具体而言，对于默认语言的`contentDir`属性，取消其注释并将原来`content`文件夹中的所有内容移至`content/<language_code>/`文件夹中。
 
 接下来将其他语言的配置取消注释，你可以在其中修改特定配置属性的值，就像示例中的`title`一样。
 
-之后我们需要继续修改导航栏的相关内容。首先请在`config/_default/`文件夹中新建`menus.<language_code>.toml`文件，并复制`menus.toml`中的内容并进行相应设置。
+之后我们需要继续修改导航栏的相关内容。首先请在`config/_default/`文件夹中新建`menus.<language_code>.yaml`文件，并复制`menus.yaml`中的内容并进行相应设置。
 
 最后，Eureka中有一些`i18n`字符串。Eureka目前官方支持的语言为：
 

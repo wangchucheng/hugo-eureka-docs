@@ -1,18 +1,17 @@
-+++
-title = "Content Management"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  2020-10-20T10:30:48+08:00
-lastmod = 2020-11-22T11:54:28+08:00
-draft = false
-
-weight = 3
-+++
+---
+title: Content Management
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: 2020-10-20T02:30:48.000Z
+lastmod: 2020-11-22T03:54:28.000Z
+draft: false
+weight: 3
+---
 
 In [Getting Started](../getting-started), I believe you have successfully run the Hugo website using Eureka theme. Next we will add some content. This article will lead you to understand the structure of the website content and editing skills.
 
@@ -91,17 +90,17 @@ The above command can create a new folder containing default author content in t
 
 Hugo's content file is mainly composed of two parts, the Front Matter at the front of the file and the body part after it. Front Matter can use toml, yaml or json format. The body part follows Markdown syntax.
 
-```toml
-+++
-title = "Hello World"
-description = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
+```yaml
+---
+title: Hello World
+description:
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
 ...
-+++
+---
 ```
 
 The above is a basic Front Matter style. You can set various attributes through it.
@@ -187,14 +186,14 @@ There are some places in Eureka that need to load videos, such as featured video
 
 For locally stored videos, you can store the video in the `static` folder under the project root directory and fill in the relative path in the configuration file. For example, to store `example.mp4` in `assets/videos/example.mp4`, you only need to set the corresponding attribute in Front Matter (for example, featuredVideo) to:
 
-```toml
-featuredVideo = "videos/example.mp4"
+```yaml
+featuredVideo: videos/example.mp4
 ```
 
 For sharing videos on video sites, you only need to set the value of the Front Matter corresponding property (such as featuredVideo) to the video player url. It should be noted that the video player URL is not the URL of the video website, but the value of the `src` attribute in its embed code (usually an iframe).
 
-```toml
-featuredVideo = "https://example.com"
+```yaml
+featuredVideo: https://example.com
 ```
 
 ## Image Loading

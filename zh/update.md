@@ -1,20 +1,19 @@
-+++
-title = "更新Eureka"
-description = ""
-summary = ""
-toc = true
-authors = []
-tags = []
-categories = []
-series = []
-date =  "2020-10-21T23:58:12+08:00"
-lastmod = "2020-10-21T23:58:12+08:00"
-draft = false
-
-weight = 6
-
-aliases = ["update-eureka"]
-+++
+---
+title: 更新Eureka
+description: ''
+summary: ''
+toc: true
+authors: []
+tags: []
+categories: []
+series: []
+date: '2020-10-21T23:58:12+08:00'
+lastmod: '2020-10-21T23:58:12+08:00'
+draft: false
+weight: 6
+aliases:
+  - update-eureka
+---
 
 本文将介绍通过不同方式更新Eureka的方法。
 
@@ -82,7 +81,7 @@ git rm -f themes/eureka
 hugo mod init <module_name>
 ```
 
-最后将`config/_default/config.toml`中的`theme = "eureka"`注释并将`theme = "github.com/wangchucheng/hugo-eureka"`取消注释。
+最后将`config/_default/config.yaml`中的`theme: eureka`注释并将`theme: github.com/wangchucheng/hugo-eureka`取消注释。
 
 这时你已经完成了由Git Submodule到Hugo Modules的迁移。
 
