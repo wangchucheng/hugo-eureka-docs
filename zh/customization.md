@@ -21,7 +21,7 @@ aliases:
 
 ## 导航栏
 
-你可以简单快捷的定义网页导航栏的内容。在`config/_default/menus.toml`中，有多个`main`模块，只需根据示例文件中的内容进行修改即可。例如在导航栏加入archive页只需加入以下内容即可：
+你可以简单快捷的定义网页导航栏的内容。在`config/_default/menus.yaml`中，有多个`main`模块，只需根据示例文件中的内容进行修改即可。例如在导航栏加入archive页只需加入以下内容即可：
 
 ```yaml
 main:
@@ -32,9 +32,25 @@ main:
 
 需要注意的是，导航栏的顺序按`weight`的大小升序排列。
 
+## 代码高亮
+
+Eureka使用highlight.js渲染代码高亮。如需配置highlight.js，只需对`config/_default/params.yaml`中的`highlight`进行相关配置即可。
+
+**highlight.handler(string)**
+
+可选值为highlightjs。
+
+**highlight.highlightjs.languages(list)**
+
+highlight.js默认会包含部分常见语言，通过该属性可配置默认语言外的其他语言。查看[可用的语言](https://github.com/highlightjs/cdn-release/tree/master/build/languages)。
+
+**highlight.highlightjs.style(string)**
+
+Eureka默认使用highlight.js的solarized-light样式，通过该属性可配置使用的样式。查看[可用的样式](https://github.com/highlightjs/cdn-release/tree/master/build/styles)。
+
 ## 数学公式
 
-Eureka支持使用KaTeX渲染LaTeX数学公式。如需配置KaTeX，只需对`config/_default/params.toml`中的`[math]`进行相关配置即可。
+Eureka支持使用KaTeX渲染LaTeX数学公式。如需配置KaTeX，只需对`config/_default/params.yaml`中的`math`进行相关配置即可。
 
 **math.handler(string)**
 
@@ -69,7 +85,7 @@ content/
 
 ## 评论
 
-目前Eureka支持Disqus和Commento两类评论系统。若需激活评论系统，只需修改`config/_default/params.toml`中`[comment]`相关内容。以Disqus为例，如需激活Disqus，只需将内容按如下方式修改即可：
+目前Eureka支持Disqus和Commento两类评论系统。若需激活评论系统，只需修改`config/_default/params.yaml`中`comment`相关内容。以Disqus为例，如需激活Disqus，只需将内容按如下方式修改即可：
 
 ```yaml
 comment:
@@ -84,7 +100,7 @@ comment:
 
 ## 基本配置文件
 
-在`config/_default/config.toml`中定义了部分基本配置，帮助你设置网站的一些基础功能。本章节将不涉及前文已包含的内容。
+在`config/_default/config.yaml`中定义了部分基本配置，帮助你设置网站的一些基础功能。本章节将不涉及前文已包含的内容。
 
 **baseURL(string)**
 

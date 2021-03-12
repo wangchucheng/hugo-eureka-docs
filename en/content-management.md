@@ -178,7 +178,7 @@ The second method is to use html tags to wrap the formula block, this method can
 your_displayed_equation
 </div>
 ```
-It should be noted that when using this method, the `unsafe` attribute of `[markup.goldmark.renderer]` in the `config.toml` configuration file should be set to `true`.
+It should be noted that when using this method, the `unsafe` attribute of `markup.goldmark.renderer` in the `config.yaml` configuration file should be set to `true`.
 
 ## Video Loading
 
@@ -206,16 +206,16 @@ We need to add pictures in some places in the configuration file, such as homepa
 
 For locally stored pictures, you can choose to store the pictures in the `assets` or `static` folder under the project root directory, and fill in the relative path in the configuration file. For example, to store `example.jpg` in `assets/images/example.jpg`, you only need to set the configuration file as:
 
-```toml
-imgLeft = "images/example.jpg"
+```yaml
+imgLeft: images/example.jpg
 ```
 
 It should be noted that the `icon` attribute can only be stored in the `assets` folder.
 
 For external images, you only need to set the value of the corresponding attribute of the configuration file to the image url.
 
-```toml
-imgLeft = "https://example.com"
+```yaml
+imgLeft: https://example.com
 ```
 
 ### Add Images in Front Matter

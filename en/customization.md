@@ -21,7 +21,7 @@ In [Content Management](../content-management), you have already learned about a
 
 ## Navigation Bar
 
-You can define the content of the web page navigation bar simply and quickly. In `config/_default/menus.toml`, there are multiple `main` modules, just modify them according to the content in the sample file. For example, adding the archive page in the navigation bar only needs to add the following content:
+You can define the content of the web page navigation bar simply and quickly. In `config/_default/menus.yaml`, there are multiple `main` modules, just modify them according to the content in the sample file. For example, adding the archive page in the navigation bar only needs to add the following content:
 
 ```yaml
 main:
@@ -32,9 +32,25 @@ main:
 
 It should be noted that the order of the navigation bar is in ascending order of the size of `weight`.
 
+## Highlight
+
+Eureka uses highlight.js to render code highlighting. If you need to configure highlight.js, you only need to configure the `highlight` in `config/_default/params.yaml`.
+
+**highlight.handler(string)**
+
+The optional value is highlightjs.
+
+**highlight.highlightjs.languages(list)**
+
+Highlight.js will include some common languages by default, and other languages can be configured through this property. See [Available Languages](https://github.com/highlightjs/cdn-release/tree/master/build/languages).
+
+**highlight.highlightjs.style(string)**
+
+Eureka uses the solarized-light style of highlight.js by default, and the style used can be configured through this property. See [Available Styles](https://github.com/highlightjs/cdn-release/tree/master/build/styles).
+
 ## Math
 
-Eureka supports the use of KaTeX to render LaTeX mathematical formulas. If you need to configure KaTeX, you only need to configure the `[math]` in `config/_default/params.toml`.
+Eureka supports the use of KaTeX to render LaTeX mathematical formulas. If you need to configure KaTeX, you only need to configure the `math` in `config/_default/params.yaml`.
 
 **math.handler(string)**
 
@@ -69,7 +85,7 @@ You can set the value of the `math` attribute in the Front Matter of the file in
 
 ## Comment
 
-Currently Eureka supports two types of comment systems, Disqus and Commento. To activate the comment system, just modify the content related to `[comment]` in `config/_default/params.toml`. Take Disqus as an example, if you need to activate Disqus, you only need to modify the content as follows:
+Currently Eureka supports two types of comment systems, Disqus and Commento. To activate the comment system, just modify the content related to `comment` in `config/_default/params.yaml`. Take Disqus as an example, if you need to activate Disqus, you only need to modify the content as follows:
 
 ```yaml
 comment:
@@ -84,7 +100,7 @@ comment:
 
 ## Basic Config File
 
-Some basic configurations are defined in `config/_default/config.toml` to help you set up some basic functions of the website. This chapter will not cover the content already contained in the previous article.
+Some basic configurations are defined in `config/_default/config.yaml` to help you set up some basic functions of the website. This chapter will not cover the content already contained in the previous article.
 
 **baseURL(string)**
 

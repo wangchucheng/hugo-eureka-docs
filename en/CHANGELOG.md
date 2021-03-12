@@ -13,6 +13,24 @@ draft: false
 weight: 7
 ---
 
+## 0.6.0 (2021-03-12)
+
+
+### Bug Fixes
+
+* fix render error when scale is null ([9fcd389](https://github.com/wangchucheng/hugo-eureka/commit/9fcd3891b1c27a73e29490cc050c85452178b837))
+* KaTeX formula overflow ([c6c7aa2](https://github.com/wangchucheng/hugo-eureka/commit/c6c7aa2688a00918ec70f7387273e85761a08e90)), closes [#62](https://github.com/wangchucheng/hugo-eureka/issues/62)
+* markdown render error for experiences writeup ([#44](https://github.com/wangchucheng/hugo-eureka/issues/44)) ([4934fb9](https://github.com/wangchucheng/hugo-eureka/commit/4934fb902d29de68daa6c3e4d6f607a23ebf5445))
+* unable to change highlightjs style ([#66](https://github.com/wangchucheng/hugo-eureka/issues/66)) ([4f4c844](https://github.com/wangchucheng/hugo-eureka/commit/4f4c8443a391b4933a019a0940c8f8b86d93101e))
+
+
+### Features
+
+* add custom highlightjs languages ([01a9ea3](https://github.com/wangchucheng/hugo-eureka/commit/01a9ea34ab121f7210a306a4bbc125c5e84e73aa))
+* add experiences widget ([#37](https://github.com/wangchucheng/hugo-eureka/issues/37)) ([26dde52](https://github.com/wangchucheng/hugo-eureka/commit/26dde5274fb57dad6445bc2eeb4937865512070a)), closes [#35](https://github.com/wangchucheng/hugo-eureka/issues/35)
+* add markdownify to about front matter ([#33](https://github.com/wangchucheng/hugo-eureka/issues/33)) ([13d24ae](https://github.com/wangchucheng/hugo-eureka/commit/13d24aee7a87924442254f0efc7011630054ba14))
+
+
 ## 0.5.0 (2021-01-21)
 
 

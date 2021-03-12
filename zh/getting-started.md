@@ -72,7 +72,7 @@ hugo mod init <module_name>
 
 接下来，将[exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite)中的`config`文件夹复制到项目根目录下，对`config`文件夹的内容进行配置。
 
-最后将`config/_default/config.toml`中的`theme = "eureka"`注释并将`theme = "github.com/wangchucheng/hugo-eureka"`取消注释。配置后删除原先的`config.toml`文件即可。
+最后将`config/_default/config.yaml`中的`theme: eureka`注释并将`theme: github.com/wangchucheng/hugo-eureka`取消注释。配置后删除原先的`config.toml`文件即可。
 
 完成以上步骤后使用以下命令即可在浏览器中预览项目：
 

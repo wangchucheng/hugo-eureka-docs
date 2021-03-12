@@ -179,7 +179,7 @@ your_displayed_equation
 </div>
 ```
 
-需要注意的是，在使用这种方法时，在`config.toml`配置文件中的`[markup.goldmark.renderer]`的`unsafe`属性应设为`true`。
+需要注意的是，在使用这种方法时，在`config.yaml`配置文件中的`markup.goldmark.renderer`的`unsafe`属性应设为`true`。
 
 ## 加载视频
 
