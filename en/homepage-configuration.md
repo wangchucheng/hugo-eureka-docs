@@ -27,6 +27,7 @@ Eureka currently provides these widgets:
 -	**about**：A widget that displays information about the website author.
 -	**vintage**：The classic Eureka homepage component.
 -	**blank**：Completely customizable widget.
+-	**experiences**: Displays cards containing information such as position/title, organization, some dates, location, title, and a writeup.
 
 The content of the homepage is defined by the files in the `content/homepage` folder, and each widget corresponds to a file.
 
@@ -119,6 +120,65 @@ The image on the left side of the vintage widget. For the setting method, please
 **imgRight(string)**
 
 The picture on the right side of the vintage widget. For the setting method, please refer to [Image Loading](../content-management/#image-loading).
+
+### Experiences Widget Configuration
+
+The experiences widget is composed of multiple cards where each card displays a title, an organization (with a hyperlinked url), some dates, a location, and a writeup. There can be as many cards as desired in the experiences widget with each card containing their relevant information.
+
+Example usages for the experiences widget include documenting employment history, education history, awards, projects, etc.
+
+All the relevant parameters are contained in experiences section of the front matter. Additional cards can be added by adding a dash with the relevant parameters (title, organization, dates, location, writeup).
+
+Example below of the structure of the configuration.
+
+```
+experiences:
+	- title:
+		organization:
+			name:
+			url:
+		dates:
+		location:
+		writeup:
+
+	- title:
+		...  (repeat as necessary to add new cards below)
+```
+
+**experiences.title(string)**
+Optional. This string is at the top of the card in bold and in larger font size relative to the rest of the card..
+Markdown formatting is enabled.
+
+**experiences.organization.name(string)**
+Optional. This string is shown beside the country string below the title in normal sized font.
+Markdown formatting is enabled.
+
+**experiences.organization.url(string)**
+Optional. This url string in this parameter is used as the destination when the organization string is clicked.
+
+**experiences.dates(string)**
+Optional. This string is shown below the title in normal sized font.
+Markdown formatting is enabled.
+
+**experiences.location(string)**
+Optional. This string is shown beside the organization name string below the title in normal sized font.
+Markdown formatting is enabled.
+
+**experiences.writeup(string)**
+Optional. This string is what is shown at the bottom of the card below all other parameters. Markdown formatting is enabled. 
+
+To allow line breaks and bullet points, a blank line is required between each seperate line. Example below.
+
+```
+    writeup: >
+      Donec scelerisque egestas augue at tempor. Fusce faucibus magna in.
+
+      - Suspendisse lacinia mauris a laoreet vehicula.
+
+      - Aenean tincidunt enim vitae ante blandit tempor.
+
+      - Nam tincidunt diam quis lorem rutrum ullamcorper.
+```
 
 ## Sorting Widgets
 
