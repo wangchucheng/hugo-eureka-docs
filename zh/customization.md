@@ -54,11 +54,13 @@ Eureka支持使用KaTeX渲染LaTeX数学公式。如需配置KaTeX，只需对`c
 
 **math.handler(string)**
 
-可选值为katex，留空则不启用该功能。
+可选值为`katex`，留空则不启用该功能。
 
 **math.katex(object)**
 
 KaTeX相关配置。具体可选值可参考：[Options · KaTeX](https://katex.org/docs/options.html)。由于Eureka使用了KaTeX的自动渲染拓展，因此链接中的`displayMode`属性将会被忽略。
+
+因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`throwOnError`应写作`throw-On-Error`或其他有效形式。
 
 Eureka也支持对每个界面是否启动数学公式渲染进行单独配置。例如你有以下文件结构的项目：
 
@@ -97,6 +99,20 @@ comment:
     # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
     url: ''
 ```
+
+## 图表
+
+Eureka支持使用Mermaid渲染图表。如需配置Mermaid，只需对`config/_default/params.yaml`中的`diagram`进行相关配置即可。
+
+**diagram.handler(string)**
+
+可选值为`mermaid`，留空则不启用该功能。
+
+**diagram.mermaid(object)**
+
+Mermaid相关配置。具体可选值可参考：[Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup)。
+
+因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`diagramPadding`应写作`diagram-Padding`或其他有效形式。
 
 ## 基本配置文件
 

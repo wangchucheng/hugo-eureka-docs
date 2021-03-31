@@ -54,11 +54,13 @@ Eureka supports the use of KaTeX to render LaTeX mathematical formulas. If you n
 
 **math.handler(string)**
 
-The optional value is katex, leave it blank to disable this feature.
+The optional value is `katex`, leave it blank to disable this feature.
 
 **math.katex(object)**
 
 KaTeX related configuration. For specific optional values, please refer to: [Options · KaTeX](https://katex.org/docs/options.html). Since Eureka uses KaTeX's auto-render extension, the `displayMode` property in the link will be ignored.
+
+Because Hugo's config params are case-insensitive, you need to add `-` or `_` before the uppercase letters. For example, `throwOnError` should be written as `throw-On-Error` or other acceptable formats.
 
 Eureka also supports independent configuration of whether to render math formula for each page or section. For example, you have a project with the following file structure:
 
@@ -97,6 +99,20 @@ comment:
     # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
     url: ''
 ```
+
+## Diagram
+
+Eureka supports the use of Mermaid to render diagrams. If you need to configure Mermaid, you only need to configure the `diagram` in `config/_default/params.yaml`.
+
+**diagram.handler(string)**
+
+The optional value is `mermaid`, leave it blank to disable this feature.
+
+**diagram.mermaid(object)**
+
+Mermaid related configuration. For specific optional values, please refer to: [Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup).
+
+Because Hugo's config params are case-insensitive, you need to add `-` or `_` before the uppercase letters. For example, `diagramPadding` should be written as `diagram-Padding` or other acceptable formats.
 
 ## Basic Config File
 
