@@ -17,6 +17,8 @@ weight: 5
 
 <!--more-->
 
+>	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
+
 ## 多语言配置
 
 首先我们需要对配置文件进行一些修改以使用多语言功能。

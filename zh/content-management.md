@@ -17,6 +17,8 @@ weight: 3
 
 <!--more-->
 
+>	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
+
 ## 目录结构
 
 对于单一语言的项目，你可以在项目根目录下的`content`文件夹中管理内容。对于多语言项目，内容则处在特定语言的目录下，例如`content/zh/`。

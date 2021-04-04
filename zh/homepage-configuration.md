@@ -17,6 +17,8 @@ weight: 2
 
 <!--more-->
 
+>	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
+
 ## 简介
 
 Eureka提供了一个功能强大且配置灵活的小组件系统来构建主页。Eureka提供的小组件系统可以在不编写代码的情况下自由组合并自定义组件样式。
