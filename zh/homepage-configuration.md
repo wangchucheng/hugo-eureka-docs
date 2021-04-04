@@ -31,15 +31,41 @@ Eureka目前提供的小组件有：
 
 主页内容由`content/homepage`文件夹中的文件定义，每一个小组件对应一个文件。
 
+如果你此前从未配置过主页，可通过以下命令新建`homepage`文件夹：
+
+```
+hugo new -k homepage homepage
+```
+
+如果你的网站为多语言网站则可以通过如下命令新建：
+
+```
+hugo new -k homepage content/zh/homepage
+```
+
+>	到目前为止，如果你使用了Hugo Modules安装主题，该命令无法正确创建文件夹。你需要手动将[homepage](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/homepage)文件夹复制到你的`content`文件夹中。
+
 ## 新建小组件
 
 你可以使用以下命令在`homepage`文件夹中生成一个`pages`类型的小组件：
+
+```
+hugo new -k widgets/pages homepage/<your-name.md>
+```
+
+如果你的网站为多语言网站则可以通过如下命令新建：
 
 ```
 hugo new -k widgets/pages content/zh/homepage/<your-name.md>
 ```
 
 需要注意的是，`blank`类型为用户提供了可以自由编写html代码并嵌入Eureka的功能，所以其文件类型为html。在生成`blank`类型的文件时应指定其类型为`.html`而非`.md`。
+
+```
+hugo new -k widgets/blank homepage/<your-name.html>
+```
+
+如果你的网站为多语言网站则可以通过如下命令新建：
 
 ```
 hugo new -k widgets/blank content/zh/homepage/<your-name.html>

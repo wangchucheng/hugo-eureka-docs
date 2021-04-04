@@ -45,10 +45,11 @@ git submodule add https://github.com/wangchucheng/hugo-eureka.git themes/eureka
 ```shell
 cd themes/eureka
 git checkout <eureka_version>
-git pull
 ```
 
 接下来，将[exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite)中的`config`文件夹复制到项目根目录下，对`config`文件夹的内容进行配置。配置后删除原先的`config.toml`文件即可。
+
+如果你是新建的Hugo项目，`content`文件夹下默认没有内容。你可以将[exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite)中的`content`文件夹复制到项目根目录下预览主题效果。
 
 完成以上步骤后使用以下命令即可在浏览器中预览项目：
 
@@ -73,6 +74,8 @@ hugo mod init <module_name>
 接下来，将[exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite)中的`config`文件夹复制到项目根目录下，对`config`文件夹的内容进行配置。
 
 最后将`config/_default/config.yaml`中的`theme: eureka`注释并将`theme: github.com/wangchucheng/hugo-eureka`取消注释。配置后删除原先的`config.toml`文件即可。
+
+如果你是新建的Hugo项目，`content`文件夹下默认没有内容。你可以将[exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite)中的`content`文件夹复制到项目根目录下预览主题效果。
 
 完成以上步骤后使用以下命令即可在浏览器中预览项目：
 
@@ -131,6 +134,8 @@ Eureka提供的全部内容类型可以参考[archetypes](https://github.com/wan
 ```yaml
 title: My Own Title
 ```
+
+关于主页的相关配置可参考[主页配置](../homepage-configuration)。
 
 ## 生成网站
 

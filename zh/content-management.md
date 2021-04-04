@@ -53,6 +53,8 @@ hugo new -k docs docs/<your_doc>/<your_page.md>
 hugo new -k docs docs
 ```
 
+>	到目前为止，如果你使用了Hugo Modules安装主题，该命令无法正确创建文件夹。你需要手动将[docs](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/docs)文件夹复制到你的`content`文件夹中。
+
 ### 多版本文档
 
 Eureka支持多版本文档。你只需将历史版本全部内容复制到名称为版本号的子文件夹下即可。版本号需遵循[语义化版本](https://semver.org/)，版本号最前是否包含`v`均可以被正常识别。

@@ -13,6 +13,19 @@ draft: false
 weight: 7
 ---
 
+## 0.7.0 (2021-04-03)
+
+
+### Bug Fixes
+
+* make KaTeX options case sensitive ([4b0bb03](https://github.com/wangchucheng/hugo-eureka/commit/4b0bb031102826fccf891a648f44713636f33dd0))
+
+
+### Features
+
+* add mermaid support ([296ed03](https://github.com/wangchucheng/hugo-eureka/commit/296ed03bc593a54af0eec50c7d4e4b63b7d0ac69)), closes [#26](https://github.com/wangchucheng/hugo-eureka/issues/26)
+
+
 ## 0.6.0 (2021-03-12)
 
 
