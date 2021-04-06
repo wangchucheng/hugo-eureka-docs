@@ -38,6 +38,7 @@ weight: 5
 
 -	意大利语
 -	法语
+-	俄语
 
 如果你需要其他语言的翻译，你可以将[i18n](https://github.com/wangchucheng/hugo-eureka/tree/master/i18n)文件夹复制到项目根目录中，并根据其中的内容添加你语言的翻译，并以相应的语言代码命名。
 
