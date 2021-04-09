@@ -208,13 +208,13 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 网站的描述。
 
-**repoURL(string)**
-
-项目仓库网址。
-
 **repoEditURL(string)**
 
-编辑当页内容的网址，如果项目仓库在Github上可为空。
+内容编辑网址，可在`params.yaml`或Front Matters中定义。值为当前目录对应的仓库编辑地址。
+
+例如在`params.yaml`中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>`即可在每篇文章最下方显示对应链接。
+
+如果只想显示`content/docs`中的内容则可在该文件夹的`_index.md`的Front Matters中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>/content/docs`。其他各层次同理。
 
 **titleSeparator(string/list)**
 

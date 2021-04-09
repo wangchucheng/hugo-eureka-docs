@@ -208,13 +208,13 @@ The types in the list will be displayed on the homepage.
 
 The description of the site.
 
-**repoURL(string)**
-
-Project repository URL.
-
 **repoEditURL(string)**
 
-Edit the URL of the current page content, if the project repository is on Github, it can be empty.
+The content editing URL can be defined in `params.yaml` or Front Matters. The value is the edit url of the repository corresponding to the current directory.
+
+For example, define `repoEditURL: https://github.com/<username>/<repo>/blob/<branch>` in `params.yaml` to display the corresponding link at the bottom of each article.
+
+If you only want to display the content in `content/docs`, you can define `repoEditURL: https://github.com/<username>/<repo>/blob/ <branch>/content/docs` in the Front Matters of `_index.md` of the folder`. Other levels are handled in the same way.
 
 **titleSeparator(string/list)**
 
