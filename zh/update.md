@@ -19,6 +19,8 @@ aliases:
 
 <!--more-->
 
+>	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
+
 目前我们可以通过`Git Submodule`和`Hugo Modules`两种方式安装Eureka。接下来你将了解到如何更新Eureka。需要注意的是，你只能通过与安装相同的方式进行更新。
 
 ## 使用Git Submodule更新

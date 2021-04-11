@@ -31,18 +31,44 @@ Eureka currently provides these widgets:
 
 The content of the homepage is defined by the files in the `content/homepage` folder, and each widget corresponds to a file.
 
+If you never configured homepage before, you can use this command to new `homepage` folder:
+
+```
+hugo new -k homepage homepage
+```
+
+If your website has multiple languages, you can use this command to new:
+
+```
+hugo new -k homepage content/en/homepage
+```
+
+>	So far, if you use Hugo Modules to install Eureka, this command cannot create the folder correctly. You need to manually copy the [homepage](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/homepage) folder to your `content` folder.
+
 ## New Widget
 
 You can use the following command to generate a widget of type `pages` in the `homepage` folder:
 
 ```
-hugo new -k widgets/pages content/zh/homepage/<your-name.md>
+hugo new -k widgets/pages homepage/<your-name.md>
+```
+
+If your website has multiple languages, you can use this command to new:
+
+```
+hugo new -k widgets/pages content/en/homepage/<your-name.md>
 ```
 
 It should be noted that the `blank` type provides users with the ability to freely write html code and embed in Eureka, so the file type is html. When generating a file of type `blank`, specify its type as `.html` instead of `.md`.
 
 ```
-hugo new -k widgets/blank content/zh/homepage/<your-name.html>
+hugo new -k widgets/blank homepage/<your-name.html>
+```
+
+If your website has multiple languages, you can use this command to new:
+
+```
+hugo new -k widgets/blank content/en/homepage/<your-name.html>
 ```
 
 ## Widget Configuration

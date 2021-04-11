@@ -53,6 +53,8 @@ If you have not created the content of the document type before, you need to gen
 hugo new -k docs docs
 ```
 
+>	So far, if you use Hugo Modules to install Eureka, this command cannot create the folder correctly. You need to manually copy the [docs](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/docs) folder to your `content` folder.
+
 ### Multi-version document
 
 Eureka supports multiple versions of documents. You only need to copy all the contents of the historical version to the subfolder named version number. The version number should follow [Semantic Version](https://semver.org/), and whether the version number contains `v` at the beginning can be recognized normally.

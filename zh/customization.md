@@ -54,11 +54,13 @@ Eureka支持使用KaTeX渲染LaTeX数学公式。如需配置KaTeX，只需对`c
 
 **math.handler(string)**
 
-可选值为katex，留空则不启用该功能。
+可选值为`katex`，留空则不启用该功能。
 
 **math.katex(object)**
 
 KaTeX相关配置。具体可选值可参考：[Options · KaTeX](https://katex.org/docs/options.html)。由于Eureka使用了KaTeX的自动渲染拓展，因此链接中的`displayMode`属性将会被忽略。
+
+因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`throwOnError`应写作`throw-On-Error`或其他有效形式。
 
 Eureka也支持对每个界面是否启动数学公式渲染进行单独配置。例如你有以下文件结构的项目：
 
@@ -85,18 +87,37 @@ content/
 
 ## 评论
 
-目前Eureka支持Disqus、Commento和Valine三种评论系统。若需激活评论系统，只需修改`config/_default/params.yaml`中`comment`相关内容。以Disqus为例，如需激活Disqus，只需将内容按如下方式修改即可：
+Eureka支持使用Disqus，Utterances，Valine和Commento作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
 
-```yaml
-comment:
-  # Options: disqus and commento.
-  platform: disqus
-  disqus:
-    shortname: <your_shortname>
-  commento:
-    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
-    url: ''
-```
+**comment.platform(string)**
+
+可选值为`disqus`，`utterances`及`commento`，留空则不启用该功能。
+
+**comment.disqus.shortname(string)**
+
+Disqus的shortname值。
+
+**comment.utterances(object)**
+
+Utterances相关配置。具体可选值可参考：[utterances](https://utteranc.es/)。如果你希望Utterances的色彩模式跟随Eureka，只需将配置项中的`theme`设为`eureka`即可。
+
+**comment.commento.url**
+
+如果你的commento为自托管的，该值为你的网址(例如https://commento.example.com)。否则留空。
+
+## 图表
+
+Eureka支持使用Mermaid渲染图表。如需配置Mermaid，只需对`config/_default/params.yaml`中的`diagram`进行相关配置即可。
+
+**diagram.handler(string)**
+
+可选值为`mermaid`，留空则不启用该功能。
+
+**diagram.mermaid(object)**
+
+Mermaid相关配置。具体可选值可参考：[Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup)。
+
+因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`diagramPadding`应写作`diagram-Padding`或其他有效形式。
 
 ## 基本配置文件
 
@@ -192,13 +213,13 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 网站的描述。
 
-**repoURL(string)**
-
-项目仓库网址。
-
 **repoEditURL(string)**
 
-编辑当页内容的网址，如果项目仓库在Github上可为空。
+内容编辑网址，可在`params.yaml`或Front Matters中定义。值为当前目录对应的仓库编辑地址。
+
+例如在`params.yaml`中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>`即可在每篇文章最下方显示对应链接。
+
+如果只想显示`content/docs`中的内容则可在该文件夹的`_index.md`的Front Matters中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>/content/docs`。其他各层次同理。
 
 **titleSeparator(string/list)**
 

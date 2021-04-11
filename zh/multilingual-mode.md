@@ -17,6 +17,8 @@ weight: 5
 
 <!--more-->
 
+>	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
+
 ## 多语言配置
 
 首先我们需要对配置文件进行一些修改以使用多语言功能。
@@ -34,8 +36,10 @@ weight: 5
 
 由社区提供的语言支持：
 
--	意大利语
 -	法语
+-	德语
+-	意大利语
+-	俄语
 
 如果你需要其他语言的翻译，你可以将[i18n](https://github.com/wangchucheng/hugo-eureka/tree/master/i18n)文件夹复制到项目根目录中，并根据其中的内容添加你语言的翻译，并以相应的语言代码命名。
 

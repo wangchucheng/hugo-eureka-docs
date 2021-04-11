@@ -54,11 +54,13 @@ Eureka supports the use of KaTeX to render LaTeX mathematical formulas. If you n
 
 **math.handler(string)**
 
-The optional value is katex, leave it blank to disable this feature.
+The optional value is `katex`, leave it blank to disable this feature.
 
 **math.katex(object)**
 
 KaTeX related configuration. For specific optional values, please refer to: [Options · KaTeX](https://katex.org/docs/options.html). Since Eureka uses KaTeX's auto-render extension, the `displayMode` property in the link will be ignored.
+
+Because Hugo's config params are case-insensitive, you need to add `-` or `_` before the uppercase letters. For example, `throwOnError` should be written as `throw-On-Error` or other acceptable formats.
 
 Eureka also supports independent configuration of whether to render math formula for each page or section. For example, you have a project with the following file structure:
 
@@ -85,18 +87,37 @@ You can set the value of the `math` attribute in the Front Matter of the file in
 
 ## Comment
 
-Currently Eureka supports three types of comment systems (Disqus, Commento and Valine). To activate the comment system, just modify the content related to `comment` in `config/_default/params.yaml`. Take Disqus as an example, if you need to activate Disqus, you only need to modify the content as follows:
+Eureka supports using Disqus, Utterances, Valine and Commento as comment system。If you need to configure comment, you just need to configure the `comment` in `config/_default/params.yaml`
 
-```yaml
-comment:
-  # Options: disqus and commento.
-  platform: disqus
-  disqus:
-    shortname: <your_shortname>
-  commento:
-    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
-    url: ''
-```
+**comment.platform(string)**
+
+The optional value is `disqus`, `utterances` and `commento`, leave it blank to disable this feature.
+
+**comment.disqus.shortname(string)**
+
+The shortname of Disqus.
+
+**comment.utterances(object)**
+
+Utterances related configuration. For specific optional values, please refer to: [utterances](https://utteranc.es/). If you want the color scheme of utterances to follow eureka's, you can set `theme` to `eureka` in config params.
+
+**comment.commento.url**
+
+If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
+
+## Diagram
+
+Eureka supports the use of Mermaid to render diagrams. If you need to configure Mermaid, you only need to configure the `diagram` in `config/_default/params.yaml`.
+
+**diagram.handler(string)**
+
+The optional value is `mermaid`, leave it blank to disable this feature.
+
+**diagram.mermaid(object)**
+
+Mermaid related configuration. For specific optional values, please refer to: [Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup).
+
+Because Hugo's config params are case-insensitive, you need to add `-` or `_` before the uppercase letters. For example, `diagramPadding` should be written as `diagram-Padding` or other acceptable formats.
 
 ## Basic Config File
 
@@ -192,13 +213,13 @@ The types in the list will be displayed on the homepage.
 
 The description of the site.
 
-**repoURL(string)**
-
-Project repository URL.
-
 **repoEditURL(string)**
 
-Edit the URL of the current page content, if the project repository is on Github, it can be empty.
+The content editing URL can be defined in `params.yaml` or Front Matters. The value is the edit url of the repository corresponding to the current directory.
+
+For example, define `repoEditURL: https://github.com/<username>/<repo>/blob/<branch>` in `params.yaml` to display the corresponding link at the bottom of each article.
+
+If you only want to display the content in `content/docs`, you can define `repoEditURL: https://github.com/<username>/<repo>/blob/ <branch>/content/docs` in the Front Matters of `_index.md` of the folder`. Other levels are handled in the same way.
 
 **titleSeparator(string/list)**
 

@@ -1,5 +1,5 @@
 ---
-title: Eureka
+title: Hugo Eureka
 description: ''
 summary: ''
 toc: true
