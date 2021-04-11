@@ -87,18 +87,23 @@ content/
 
 ## 评论
 
-目前Eureka支持Disqus和Commento两类评论系统。若需激活评论系统，只需修改`config/_default/params.yaml`中`comment`相关内容。以Disqus为例，如需激活Disqus，只需将内容按如下方式修改即可：
+Eureka支持使用Disqus，Utterances和Commento作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
 
-```yaml
-comment:
-  # Options: disqus and commento.
-  platform: disqus
-  disqus:
-    shortname: <your_shortname>
-  commento:
-    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
-    url: ''
-```
+**comment.platform(string)**
+
+可选值为`disqus`，`utterances`及`commento`，留空则不启用该功能。
+
+**comment.disqus.shortname(string)**
+
+Disqus的shortname值。
+
+**comment.utterances(object)**
+
+Utterances相关配置。具体可选值可参考：[utterances](https://utteranc.es/)。如果你希望Utterances的色彩模式跟随Eureka，只需将配置项中的`theme`设为`eureka`即可。
+
+**comment.commento.url**
+
+如果你的commento为自托管的，该值为你的网址(例如https://commento.example.com)。否则留空。
 
 ## 图表
 

@@ -87,18 +87,23 @@ You can set the value of the `math` attribute in the Front Matter of the file in
 
 ## Comment
 
-Currently Eureka supports two types of comment systems, Disqus and Commento. To activate the comment system, just modify the content related to `comment` in `config/_default/params.yaml`. Take Disqus as an example, if you need to activate Disqus, you only need to modify the content as follows:
+Eureka supports using Disqus, Utterances and Commento as comment system。If you need to configure comment, you just need to configure the `comment` in `config/_default/params.yaml`
 
-```yaml
-comment:
-  # Options: disqus and commento.
-  platform: disqus
-  disqus:
-    shortname: <your_shortname>
-  commento:
-    # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
-    url: ''
-```
+**comment.platform(string)**
+
+The optional value is `disqus`, `utterances` and `commento`, leave it blank to disable this feature.
+
+**comment.disqus.shortname(string)**
+
+The shortname of Disqus.
+
+**comment.utterances(object)**
+
+Utterances related configuration. For specific optional values, please refer to: [utterances](https://utteranc.es/). If you want the color scheme of utterances to follow eureka's, you can set `theme` to `eureka` in config params.
+
+**comment.commento.url**
+
+If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
 
 ## Diagram
 
