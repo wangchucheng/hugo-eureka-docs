@@ -85,7 +85,7 @@ You can set the value of the `math` attribute in the Front Matter of the file in
 
 ## Comment
 
-Currently Eureka supports two types of comment systems, Disqus and Commento. To activate the comment system, just modify the content related to `comment` in `config/_default/params.yaml`. Take Disqus as an example, if you need to activate Disqus, you only need to modify the content as follows:
+Currently Eureka supports three types of comment systems (Disqus, Commento and Valine). To activate the comment system, just modify the content related to `comment` in `config/_default/params.yaml`. Take Disqus as an example, if you need to activate Disqus, you only need to modify the content as follows:
 
 ```yaml
 comment:

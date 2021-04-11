@@ -85,7 +85,7 @@ content/
 
 ## 评论
 
-目前Eureka支持Disqus和Commento两类评论系统。若需激活评论系统，只需修改`config/_default/params.yaml`中`comment`相关内容。以Disqus为例，如需激活Disqus，只需将内容按如下方式修改即可：
+目前Eureka支持Disqus、Commento和Valine三种评论系统。若需激活评论系统，只需修改`config/_default/params.yaml`中`comment`相关内容。以Disqus为例，如需激活Disqus，只需将内容按如下方式修改即可：
 
 ```yaml
 comment:
