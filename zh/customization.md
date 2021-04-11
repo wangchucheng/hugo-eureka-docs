@@ -36,15 +36,15 @@ main:
 
 Eureka使用highlight.js渲染代码高亮。如需配置highlight.js，只需对`config/_default/params.yaml`中的`highlight`进行相关配置即可。
 
-**highlight.handler(string)**
+- **highlight.handler(string)**
 
 可选值为highlightjs。
 
-**highlight.highlightjs.languages(list)**
+- **highlight.highlightjs.languages(list)**
 
 highlight.js默认会包含部分常见语言，通过该属性可配置默认语言外的其他语言。查看[可用的语言](https://github.com/highlightjs/cdn-release/tree/master/build/languages)。
 
-**highlight.highlightjs.style(string)**
+- **highlight.highlightjs.style(string)**
 
 Eureka默认使用highlight.js的solarized-light样式，通过该属性可配置使用的样式。查看[可用的样式](https://github.com/highlightjs/cdn-release/tree/master/build/styles)。
 
@@ -52,11 +52,11 @@ Eureka默认使用highlight.js的solarized-light样式，通过该属性可配�
 
 Eureka支持使用KaTeX渲染LaTeX数学公式。如需配置KaTeX，只需对`config/_default/params.yaml`中的`math`进行相关配置即可。
 
-**math.handler(string)**
+- **math.handler(string)**
 
 可选值为`katex`，留空则不启用该功能。
 
-**math.katex(object)**
+- **math.katex(object)**
 
 KaTeX相关配置。具体可选值可参考：[Options · KaTeX](https://katex.org/docs/options.html)。由于Eureka使用了KaTeX的自动渲染拓展，因此链接中的`displayMode`属性将会被忽略。
 
@@ -64,7 +64,7 @@ KaTeX相关配置。具体可选值可参考：[Options · KaTeX](https://katex.
 
 Eureka也支持对每个界面是否启动数学公式渲染进行单独配置。例如你有以下文件结构的项目：
 
-```
+```text
 content/
 ├── posts
 │   ├── post-1.md
@@ -89,31 +89,35 @@ content/
 
 Eureka支持使用Disqus，Utterances，Valine和Commento作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
 
-**comment.platform(string)**
+- **comment.platform(string)**
 
-可选值为`disqus`，`utterances`及`commento`，留空则不启用该功能。
+可选值为`disqus`，`utterances`，`valine` 及`commento`，留空则不启用该功能。
 
-**comment.disqus.shortname(string)**
+- **comment.disqus.shortname(string)**
 
 Disqus的shortname值。
 
-**comment.utterances(object)**
+- **comment.utterances(object)**
 
 Utterances相关配置。具体可选值可参考：[utterances](https://utteranc.es/)。如果你希望Utterances的色彩模式跟随Eureka，只需将配置项中的`theme`设为`eureka`即可。
 
-**comment.commento.url**
+- **comment.valine**
 
-如果你的commento为自托管的，该值为你的网址(例如https://commento.example.com)。否则留空。
+Valine相关配置。Valine需要注册使用，具体配置请参见 [valine](https://valine.js.org/)
+
+- **comment.commento.url**
+
+如果你的commento为自托管的，该值为你的网址(例如 `https://commento.example.com`)。否则留空。
 
 ## 图表
 
 Eureka支持使用Mermaid渲染图表。如需配置Mermaid，只需对`config/_default/params.yaml`中的`diagram`进行相关配置即可。
 
-**diagram.handler(string)**
+- **diagram.handler(string)**
 
 可选值为`mermaid`，留空则不启用该功能。
 
-**diagram.mermaid(object)**
+- **diagram.mermaid(object)**
 
 Mermaid相关配置。具体可选值可参考：[Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup)。
 
@@ -123,79 +127,79 @@ Mermaid相关配置。具体可选值可参考：[Configuration handling in Merm
 
 在`config/_default/config.yaml`中定义了部分基本配置，帮助你设置网站的一些基础功能。本章节将不涉及前文已包含的内容。
 
-**baseURL(string)**
+- **baseURL(string)**
 
 网站根域名。
 
-**title(string)**
+- **title(string)**
 
 网站标题。
 
-**theme(string)**
+- **theme(string)**
 
 网站使用的主题。
 
-**paginate(int)**
+- **paginate(int)**
 
 每页内容数量。
 
-**copyright(string)**
+- **copyright(string)**
 
 网站版权声明，会出现在网页最下方。
 
-**enableGitInfo(bool)**
+- **enableGitInfo(bool)**
 
 是否使用git信息。默认为`false`。
 
-**enableEmoji(bool)**
+- **enableEmoji(bool)**
 
 是否使用emoji，默认为`false`。
 
-**summaryLength(int)**
+- **summaryLength(int)**
 
 概要长度，默认为70。
 
-**defaultContentLanguage(string)**
+- **defaultContentLanguage(string)**
 
 默认语言的语言代码。
 
-**hasCJKLanguage(bool)**
+- **hasCJKLanguage(bool)**
 
 是否包含中文、日语、韩语内容，默认为`false`。
 
-**defaultContentLanguageInSubdir(bool)**
+- **defaultContentLanguageInSubdir(bool)**
 
 多语言时默认语言是否处在子链接下，例如默认语言为`zh`时，`/`将会被重定向至`/zh/`。
 
-**googleAnalytics(string)**
+- **googleAnalytics(string)**
 
 Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境中生成。如果你想在开发环境中预览，你需要设置Hugo环境变量为`production`。
 
-**markup.tableOfContents(object)**
+- **markup.tableOfContents(object)**
 
 内容目录渲染方式。
 
-**markup.tableOfContents.startLevel(int)**
+- **markup.tableOfContents.startLevel(int)**
 
 开始渲染目录的标题层级。
 
-**markup.tableOfContents.endLevel(int)**
+- **markup.tableOfContents.endLevel(int)**
 
 结束渲染目录的标题层级。
 
-**markup.tableOfContents.ordered(bool)**
+- **markup.tableOfContents.ordered(bool)**
 
 是否生成有序列表。
 
-**taxonomies(object)**
+- **taxonomies(object)**
 
 网站中的所有Taxonomies。
 
-**build(object)**
+- **build(object)**
 
 构建设置。
 
-**build.useResourceCacheWhen(string)**
+- **build.useResourceCacheWhen(string)**
 
 使用缓存文件进行渲染，如无特殊情况请保持`always`。
 
@@ -205,15 +209,15 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 除了基本配置外，你还可以设置一些Eureka提供的属性。本章节将不涉及前文已包含的内容。
 
-**mainSections(list)**
+- **mainSections(list)**
 
 列表中的类型将会显示在首页上。
 
-**description(string)**
+- **description(string)**
 
 网站的描述。
 
-**repoEditURL(string)**
+- **repoEditURL(string)**
 
 内容编辑网址，可在`params.yaml`或Front Matters中定义。值为当前目录对应的仓库编辑地址。
 
@@ -221,7 +225,7 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 如果只想显示`content/docs`中的内容则可在该文件夹的`_index.md`的Front Matters中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>/content/docs`。其他各层次同理。
 
-**titleSeparator(string/list)**
+- **titleSeparator(string/list)**
 
 设置网页标题的分隔符。默认值为`|`。
 
@@ -229,27 +233,27 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 如需多层次的分隔符则以列表形式输入，例如输入`titleSeparator: ['|', '-']`则在需要多层次的标题中将显示为`主页配置 - Eureka | 技术公馆`。其他位置将显示为`Eureka | 技术公馆`。
 
-**dateFormat(string)**
+- **dateFormat(string)**
 
 网站中显示日期的格式，配置应满足Go语言的[相应格式](https://gohugo.io/functions/format/#gos-layout-string)。
 
-**colorScheme(string)**
+- **colorScheme(string)**
 
 网站默认颜色模式。可选值为`auto`、`light`和`dark`。留空为`auto`。
 
-**siteType(string)**
+- **siteType(string)**
 
 网站类型。
 
-**icon(string)**
+- **icon(string)**
 
 网站图标，设置方式可参考[加载图片](../content-management/#加载图片)。
 
-**publisherName(string)**
+- **publisherName(string)**
 
 发布者姓名。
 
-**publisherLogo(string)**
+- **publisherLogo(string)**
 
 发布者图标，为空则为网站图标。
 

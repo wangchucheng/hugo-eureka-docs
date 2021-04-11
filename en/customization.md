@@ -36,15 +36,15 @@ It should be noted that the order of the navigation bar is in ascending order of
 
 Eureka uses highlight.js to render code highlighting. If you need to configure highlight.js, you only need to configure the `highlight` in `config/_default/params.yaml`.
 
-**highlight.handler(string)**
+- **highlight.handler(string)**
 
 The optional value is highlightjs.
 
-**highlight.highlightjs.languages(list)**
+- **highlight.highlightjs.languages(list)**
 
 Highlight.js will include some common languages by default, and other languages can be configured through this property. See [Available Languages](https://github.com/highlightjs/cdn-release/tree/master/build/languages).
 
-**highlight.highlightjs.style(string)**
+- **highlight.highlightjs.style(string)**
 
 Eureka uses the solarized-light style of highlight.js by default, and the style used can be configured through this property. See [Available Styles](https://github.com/highlightjs/cdn-release/tree/master/build/styles).
 
@@ -52,11 +52,11 @@ Eureka uses the solarized-light style of highlight.js by default, and the style 
 
 Eureka supports the use of KaTeX to render LaTeX mathematical formulas. If you need to configure KaTeX, you only need to configure the `math` in `config/_default/params.yaml`.
 
-**math.handler(string)**
+- **math.handler(string)**
 
 The optional value is `katex`, leave it blank to disable this feature.
 
-**math.katex(object)**
+- **math.katex(object)**
 
 KaTeX related configuration. For specific optional values, please refer to: [Options · KaTeX](https://katex.org/docs/options.html). Since Eureka uses KaTeX's auto-render extension, the `displayMode` property in the link will be ignored.
 
@@ -64,7 +64,7 @@ Because Hugo's config params are case-insensitive, you need to add `-` or `_` be
 
 Eureka also supports independent configuration of whether to render math formula for each page or section. For example, you have a project with the following file structure:
 
-```
+```text
 content/
 ├── posts
 │   ├── post-1.md
@@ -89,31 +89,35 @@ You can set the value of the `math` attribute in the Front Matter of the file in
 
 Eureka supports using Disqus, Utterances, Valine and Commento as comment system。If you need to configure comment, you just need to configure the `comment` in `config/_default/params.yaml`
 
-**comment.platform(string)**
+- **comment.platform(string)**
 
-The optional value is `disqus`, `utterances` and `commento`, leave it blank to disable this feature.
+The optional value is `disqus`, `utterances`, `valine` and `commento`, leave it blank to disable this feature.
 
-**comment.disqus.shortname(string)**
+- **comment.disqus.shortname(string)**
 
 The shortname of Disqus.
 
-**comment.utterances(object)**
+- **comment.utterances(object)**
 
 Utterances related configuration. For specific optional values, please refer to: [utterances](https://utteranc.es/). If you want the color scheme of utterances to follow eureka's, you can set `theme` to `eureka` in config params.
 
-**comment.commento.url**
+- **comment.valine**
 
-If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
+Valine configuration. If you wanted to use Valine as your comment system, register would be necessary. About options, please see [valine](https://valine.js.org/).
+
+- **comment.commento.url**
+
+If self-hosting, please enter the url (e.g. `https://commento.example.com`) here. Otherwise leave empty.
 
 ## Diagram
 
 Eureka supports the use of Mermaid to render diagrams. If you need to configure Mermaid, you only need to configure the `diagram` in `config/_default/params.yaml`.
 
-**diagram.handler(string)**
+- **diagram.handler(string)**
 
 The optional value is `mermaid`, leave it blank to disable this feature.
 
-**diagram.mermaid(object)**
+- **diagram.mermaid(object)**
 
 Mermaid related configuration. For specific optional values, please refer to: [Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup).
 
@@ -123,79 +127,79 @@ Because Hugo's config params are case-insensitive, you need to add `-` or `_` be
 
 Some basic configurations are defined in `config/_default/config.yaml` to help you set up some basic functions of the website. This chapter will not cover the content already contained in the previous article.
 
-**baseURL(string)**
+- **baseURL(string)**
 
 The root domain name of the site.
 
-**title(string)**
+- **title(string)**
 
 Site title.
 
-**theme(string)**
+- **theme(string)**
 
 The theme used on the site.
 
-**paginate(int)**
+- **paginate(int)**
 
 The number of content per page.
 
-**copyright(string)**
+- **copyright(string)**
 
 The site copyright statement will appear at the bottom of the page.
 
-**enableGitInfo(bool)**
+- **enableGitInfo(bool)**
 
 Whether to use git information. The default is `false`.
 
-**enableEmoji(bool)**
+- **enableEmoji(bool)**
 
 Whether to use emoji, the default is `false`.
 
-**summaryLength(int)**
+- **summaryLength(int)**
 
 Summary length, the default is 70.
 
-**defaultContentLanguage(string)**
+- **defaultContentLanguage(string)**
 
 The language code of the default language.
 
-**hasCJKLanguage(bool)**
+- **hasCJKLanguage(bool)**
 
 Whether to include Chinese, Japanese, and Korean content, the default is `false`.
 
-**defaultContentLanguageInSubdir(bool)**
+- **defaultContentLanguageInSubdir(bool)**
 
 Whether the default language is under the sub-link when multilingual, for example, when the default language is `en`, `/` will be redirected to `/en/`.
 
-**googleAnalytics(string)**
+- **googleAnalytics(string)**
 
 Google Analytics code. Starting from `0.2.1`, Google Analytics is only generated in the production environment. If you want to preview in the development environment, you need to set the Hugo environment variable to `production`.
 
-**markup.tableOfContents(object)**
+- **markup.tableOfContents(object)**
 
 Table of contents rendering method.
 
-**markup.tableOfContents.startLevel(int)**
+- **markup.tableOfContents.startLevel(int)**
 
 Start title level of the table of contents.
 
-**markup.tableOfContents.endLevel(int)**
+- **markup.tableOfContents.endLevel(int)**
 
 End title level of the table of contents.
 
-**markup.tableOfContents.ordered(bool)**
+- **markup.tableOfContents.ordered(bool)**
 
 Whether to generate an ordered list.
 
-**taxonomies(object)**
+- **taxonomies(object)**
 
 All taxonomies in the website.
 
-**build(object)**
+- **build(object)**
 
 Build settings.
 
-**build.useResourceCacheWhen(string)**
+- **build.useResourceCacheWhen(string)**
 
 Use cache files for rendering. If there are no special circumstances, please keep `always`.
 
@@ -205,15 +209,15 @@ In addition, Hugo also has some predefined basic configurations. For details, pl
 
 In addition to the basic configuration, you can also set some params provided by Eureka. This chapter will not cover the content already contained in the previous article.
 
-**mainSections(list)**
+- **mainSections(list)**
 
 The types in the list will be displayed on the homepage.
 
-**description(string)**
+- **description(string)**
 
 The description of the site.
 
-**repoEditURL(string)**
+- **repoEditURL(string)**
 
 The content editing URL can be defined in `params.yaml` or Front Matters. The value is the edit url of the repository corresponding to the current directory.
 
@@ -221,7 +225,7 @@ For example, define `repoEditURL: https://github.com/<username>/<repo>/blob/<bra
 
 If you only want to display the content in `content/docs`, you can define `repoEditURL: https://github.com/<username>/<repo>/blob/ <branch>/content/docs` in the Front Matters of `_index.md` of the folder`. Other levels are handled in the same way.
 
-**titleSeparator(string/list)**
+- **titleSeparator(string/list)**
 
 Set the separator of the page title. The default value is `|`.
 
@@ -229,27 +233,27 @@ If you only need a single-level separator, enter it as a string. For example, en
 
 If multiple levels of separators are required, enter them as a list. For example, enter `titleSeparator: ['|', '-']` and it will be displayed as `Homepage Configuration - Eureka | Tech Mansion` in titles which requires multiple levels. Others will display as `Eureka | Tech Mansion`.
 
-**dateFormat(string)**
+- **dateFormat(string)**
 
 The format of the date displayed on the website. The config should meet the [corresponding format](https://gohugo.io/functions/format/#gos-layout-string) of Golang.
 
-**colorScheme(string)**
+- **colorScheme(string)**
 
 The default color scheme of the website. Optional values are `auto`, `light` and `dark`. Leave blank as `auto`.
 
-**siteType(string)**
+- **siteType(string)**
 
 Site type.
 
-**icon(string)**
+- **icon(string)**
 
 Site icon, please refer to [Image Loading](../content-management/#image-loading).
 
-**publisherName(string)**
+- **publisherName(string)**
 
 Publisher name.
 
-**publisherLogo(string)**
+- **publisherLogo(string)**
 
 Publisher icon, when empty is the site icon.
 
