@@ -38,6 +38,16 @@ Eureka is a theme of continuous improvement. If you have any feature suggestions
 - **[Multilingual Mode](multilingual-mode)**: In addition to [Content Management](content-management) and [Customize Eureka](customization) described above, Eureka also supports [Multilingual Mode](multilingual-mode). [Multilingual Mode](multilingual-mode) will lead you to understand how to build a multilingual site.
 - **[Update Eureka](update)**: [Update Eureka](update) will introduce different ways to update Eureka.
 
+## Sites Using Eureka
+
+- [wangchucheng.com](https://www.wangchucheng.com)
+- [ruiqima.com](https://www.ruiqima.com)
+- and more...
+
+Are you using Hugo Eureka? [Add the `hugo-eureka` topic on your repo!](https://docs.github.com/en/github/administering-a-repository/classifying-your-repository-with-topics)
+
+Maybe you can also share your awesome projects with the community at [Hugo Eureka Showcase](https://github.com/wangchucheng/hugo-eureka/discussions/93). 🙌
+
 ---
 
 <div class="flex flex-col items-center">
