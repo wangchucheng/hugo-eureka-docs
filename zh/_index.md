@@ -11,6 +11,8 @@ date: '2020-10-19T22:47:34+08:00'
 lastmod: '2020-10-19T22:47:34+08:00'
 featuredImage: 'https://i.loli.net/2020/11/07/B6GZn1V2AS8XYIT.jpg'
 draft: false
+
+repoEditURL: https://github.com/wangchucheng/hugo-eureka-docs/blob/master/zh
 ---
 
 Eureka是一个功能丰富且可高度定制化的[Hugo](https://gohugo.io/)主题，使用Eureka可以让你轻松快捷地定制并部署网站。

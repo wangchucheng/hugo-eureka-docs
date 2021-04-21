@@ -13,6 +13,20 @@ draft: false
 weight: 7
 ---
 
+## 0.8.0 (2021-04-21)
+
+
+### Features
+
+* add German i18n support ([#90](https://github.com/wangchucheng/hugo-eureka/issues/90)) ([8d0808e](https://github.com/wangchucheng/hugo-eureka/commit/8d0808eb8d3cc0464794de9f88d0b2e8995f4efa))
+* add polish i18n support ([#95](https://github.com/wangchucheng/hugo-eureka/issues/95)) ([177e4b1](https://github.com/wangchucheng/hugo-eureka/commit/177e4b19c294652a163cf93d35fdc5ae91acf3e3))
+* add russian i18n support ([#87](https://github.com/wangchucheng/hugo-eureka/issues/87)) ([b5396e8](https://github.com/wangchucheng/hugo-eureka/commit/b5396e81a11d983b519c2bc1042c120582743244))
+* add utterances support ([d07e103](https://github.com/wangchucheng/hugo-eureka/commit/d07e1032454d90d3282e6d5caa5899a244e59ec6))
+* recursive enableComment param ([ebf560f](https://github.com/wangchucheng/hugo-eureka/commit/ebf560f9f484c5027a5fc9f418510d363a6bed3e))
+* recursive repoEditURL ([285eb0f](https://github.com/wangchucheng/hugo-eureka/commit/285eb0f5e27f97b8eeddff251204bbdeed17564d))
+* support Valine ([#79](https://github.com/wangchucheng/hugo-eureka/issues/79)) ([1762613](https://github.com/wangchucheng/hugo-eureka/commit/1762613dfb06a9f2fb0958b4550234ea7193b772))
+
+
 ## 0.7.0 (2021-04-03)
 
 
