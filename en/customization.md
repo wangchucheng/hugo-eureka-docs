@@ -114,7 +114,7 @@ You can set the value of the `enableComment` attribute in the Front Matter of th
 
 **comment.handler(string)**
 
-The optional value is `disqus`, `utterances` and `commento`, leave it blank to disable this feature.
+The optional value is `disqus`, `utterances`, `valine` and `commento`, leave it blank to disable this feature.
 
 **comment.disqus.shortname(string)**
 
@@ -123,6 +123,12 @@ The shortname of Disqus.
 **comment.utterances(object)**
 
 Utterances related configuration. For specific optional values, please refer to: [utterances](https://utteranc.es/). If you want the color scheme of utterances to follow eureka's, you can set `theme` to `eureka` in config params.
+
+**comment.valine(object)**
+
+Valine related configuration. For specific optional values, please refer to: [Config Reference | Valine](https://valine.js.org/en/configuration.html).
+
+Because Hugo's config params are case-insensitive, you need to add `-` or `_` before the uppercase letters. For example, `appId` should be written as `app-Id` or other acceptable formats.
 
 **comment.commento.url**
 

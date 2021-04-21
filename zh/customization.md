@@ -114,7 +114,7 @@ content/
 
 **comment.handler(string)**
 
-可选值为`disqus`，`utterances`及`commento`，留空则不启用该功能。
+可选值为`disqus`，`utterances`，`valine`及`commento`，留空则不启用该功能。
 
 **comment.disqus.shortname(string)**
 
@@ -123,6 +123,12 @@ Disqus的shortname值。
 **comment.utterances(object)**
 
 Utterances相关配置。具体可选值可参考：[utterances](https://utteranc.es/)。如果你希望Utterances的色彩模式跟随Eureka，只需将配置项中的`theme`设为`eureka`即可。
+
+**comment.valine(object)**
+
+Valine相关配置。具体可选值可参考：[配置项 | Valine](https://valine.js.org/configuration.html)。
+
+因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`appId`应写作`app-Id`或其他有效形式。
 
 **comment.commento.url**
 
