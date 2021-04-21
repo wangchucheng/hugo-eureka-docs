@@ -83,13 +83,36 @@ content/
     └── ...
 ```
 
-你可以在任意一级文件的Front Matter内设置`math`属性的值，这会影响该页面或该章节下的所有页面。优先级为Page > Section > Site。例如我在`nested-doc`的Front Matter中设置`math = fasle`而在`nested-content-1.md`的Front Matter中设置`math = true`则会使`nested-content-1.md`渲染数学公式而`nested-doc`文件夹中的其他文件不进行渲染。
+你可以在任意一级文件的Front Matter内设置`enableMath`属性的值，这会影响该页面或该章节下的所有页面。优先级为Page > Section > Site。例如我在`nested-doc`的Front Matter中设置`enableMath: fasle`而在`nested-content-1.md`的Front Matter中设置`enableMath: true`则会使`nested-content-1.md`渲染数学公式而`nested-doc`文件夹中的其他文件不进行渲染。
 
 ## 评论
 
 Eureka支持使用Disqus，Utterances和Commento作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
 
-**comment.platform(string)**
+Eureka也支持对每个界面是否启动评论进行单独配置。例如你有以下文件结构的项目：
+
+```
+content/
+├── posts
+│   ├── post-1.md
+│   ├── post-2.md
+│   └── ...
+│
+└── docs
+    ├── doc-1
+    │   ├── content-1.md
+    │   ├── content-2.md
+    |   ├── nested-doc
+    │   |   ├── nested-content-1.md
+    │   |   ├── nested-content-2.md
+    |   |   └── _index.md
+    │   └── _index.md
+    └── ...
+```
+
+你可以在任意一级文件的Front Matter内设置`enableComment`属性的值，这会影响该页面或该章节下的所有页面。优先级为Page > Section > Site。例如我在`nested-doc`的Front Matter中设置`enableComment: fasle`而在`nested-content-1.md`的Front Matter中设置`enableCommenth: true`则会使`nested-content-1.md`启用评论而`nested-doc`文件夹中的其他文件不启用评论。
+
+**comment.handler(string)**
 
 可选值为`disqus`，`utterances`及`commento`，留空则不启用该功能。
 

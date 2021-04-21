@@ -83,13 +83,36 @@ content/
     └── ...
 ```
 
-You can set the value of the `math` attribute in the Front Matter of the file in any level, which will affect this page or all pages under this section. The priority is Page > Section > Site. For example, if I set `math = fasle` in Front Matter of `nested-doc` and set `math = true` in Front Matter of `nested-content-1.md`, it will make `nested-content-1.md` render math formulas. Formulas in other files under the `nested-doc` folder will not be rendered.
+You can set the value of the `enableMath` attribute in the Front Matter of the file in any level, which will affect this page or all pages under this section. The priority is Page > Section > Site. For example, if I set `enableMath: fasle` in Front Matter of `nested-doc` and set `enableMath: true` in Front Matter of `nested-content-1.md`, it will make `nested-content-1.md` render math formulas. Formulas in other files under the `nested-doc` folder will not be rendered.
 
 ## Comment
 
 Eureka supports using Disqus, Utterances and Commento as comment system。If you need to configure comment, you just need to configure the `comment` in `config/_default/params.yaml`
 
-**comment.platform(string)**
+Eureka also supports independent configuration of whether to enable comment for each page or section. For example, you have a project with the following file structure:
+
+```
+content/
+├── posts
+│   ├── post-1.md
+│   ├── post-2.md
+│   └── ...
+│
+└── docs
+    ├── doc-1
+    │   ├── content-1.md
+    │   ├── content-2.md
+    |   ├── nested-doc
+    │   |   ├── nested-content-1.md
+    │   |   ├── nested-content-2.md
+    |   |   └── _index.md
+    │   └── _index.md
+    └── ...
+```
+
+You can set the value of the `enableComment` attribute in the Front Matter of the file in any level, which will affect this page or all pages under this section. The priority is Page > Section > Site. For example, if I set `enableComment: fasle` in Front Matter of `nested-doc` and set `enableComment: true` in Front Matter of `nested-content-1.md`, it will make `nested-content-1.md` enable comment. Comment in other files under the `nested-doc` folder will not be enabled.
+
+**comment.handler(string)**
 
 The optional value is `disqus`, `utterances` and `commento`, leave it blank to disable this feature.
 
