@@ -37,6 +37,7 @@ Languages provided by the community:
 -	French
 -	German
 -	Italian
+-	Korean
 -	Polish
 -	Russian
 
