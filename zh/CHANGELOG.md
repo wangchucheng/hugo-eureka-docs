@@ -13,6 +13,20 @@ draft: false
 weight: 7
 ---
 
+## 0.8.1 (2021-07-06)
+
+
+### Bug Fixes
+
+* cannot switch color scheme without utterances ([ccd5695](https://github.com/wangchucheng/hugo-eureka/commit/ccd5695125f1516db25424dc723eaa9fc6b3e87a))
+* incorrect escape character display in summary ([378aad4](https://github.com/wangchucheng/hugo-eureka/commit/378aad4d6f541e6a0b2f9f79cd54315b310f3f72)), closes [#123](https://github.com/wangchucheng/hugo-eureka/issues/123)
+
+
+### Features
+
+* add Korean i18n support ([#103](https://github.com/wangchucheng/hugo-eureka/issues/103)) ([11ee4a8](https://github.com/wangchucheng/hugo-eureka/commit/11ee4a8b146722582f2dd8600812463f76dd0a21))
+
+
 ## 0.8.0 (2021-04-21)
 
 

@@ -19,13 +19,13 @@ Update Eureka will introduce different ways to update Eureka.
 
 <!--more-->
 
-Currently we can install Eureka in two ways: `Git Submodule` and `Hugo Modules`. Next you will learn how to update Eureka. It should be noted that you can only update in the same way as the installation.
+Currently we can install Eureka in two ways: `Git Submodules` and `Hugo Modules`. Next you will learn how to update Eureka. It should be noted that you can only update in the same way as the installation.
 
-## Update with Git Submodule
+## Update with Git Submodules
 
-> If you have or are willing to install [Go 1.12](https://golang.org/dl/) and above in the current environment, you can [migrate to Hugo Modules](#migrate-from-git-submodule-to-hugo-modules).
+> If you have or are willing to install [Go 1.12](https://golang.org/dl/) and above in the current environment, you can [migrate to Hugo Modules](#migrate-from-git-submodules-to-hugo-modules).
 
-Use Git Submodule to update only in the project root directory:
+Use Git Submodules to update only in the project root directory:
 
 ```shell
 cd themes/eureka
@@ -53,17 +53,17 @@ hugo mod get github.com/wangchucheng/hugo-eureka@<eureka_version>
 
 You can view the historical version of Eureka in [Releases](https://github.com/wangchucheng/hugo-eureka/releases).
 
-## Migrate from Git Submodule to Hugo Modules
+## Migrate from Git Submodules to Hugo Modules
 
-Because Hugo Modules is more convenient and faster to manage than Git Submodule, and Hugo Modules is Hugo's recommended way to add themes. It is recommended that all users who have or are willing to install [Go 1.12](https://golang.org/dl/) and above in the current environment migrate to Hugo Modules.
+Because Hugo Modules is more convenient and faster to manage than Git Submodules, and Hugo Modules is Hugo's recommended way to add themes. It is recommended that all users who have or are willing to install [Go 1.12](https://golang.org/dl/) and above in the current environment migrate to Hugo Modules.
 
 ### Install Go
 
 To use most of the functions of Hugo Modules, you need to have Go 1.12 and above. You can install it on [Go official website](https://golang.org/dl/).
 
-### Delete Git Submodule
+### Delete Git Submodules
 
-To delete Git Submodule you only need to:
+To delete Git Submodules you only need to:
 
 ```shell
 git submodule deinit -f -- themes/eureka
@@ -83,7 +83,7 @@ hugo mod init <module_name>
 
 Finally, comment `theme: eureka` in `config/_default/config.yaml` and uncomment `theme: github.com/wangchucheng/hugo-eureka`.
 
-At this point you have completed the migration from Git Submodule to Hugo Modules.
+At this point you have completed the migration from Git Submodules to Hugo Modules.
 
 ---
 

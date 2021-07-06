@@ -23,16 +23,27 @@ To use Eureka normally, you need to install the following:
 
 - [Git](https://git-scm.com/)
 - [Hugo v0.74.0+](https://gohugo.io/getting-started/installing/)
+- [Go 1.12+](https://golang.org/dl/) (When installing with Hugo Modules)
 
-## Installation
+## Quick Installation
 
-Eureka can be quickly integrated into the Hugo project. Currently, Eureka can be installed in two ways: [Git Submodule](#install-with-git-submodule) and [Hugo Modules](#install-with-hugo-modules).
+Eureka can be quickly installed by using the Github Template [Hugo Eureka Starters](https://github.com/wangchucheng/hugo-eureka-starters).
 
-### Install with Git Submodule
+When using this method, please click the `Use this template` button on the page and set your repository information.
+
+If you want to install with Hugo Modules, just click the `Create repository from template` button after entering the information.
+
+If you want to install with Git Submodules, please check the `Include all branches` option after entering the information, and then click the `Create repository from template` button. After the repository is created, set the default branch to the `git-submodules` branch.
+
+## Manual Installation
+
+Eureka can be quickly integrated into the Hugo project. Currently, Eureka can be installed in two ways: [Git Submodules](#install-with-git-submodules) and [Hugo Modules](#install-with-hugo-modules).
+
+### Install with Git Submodules
 
 > If you have or are willing to install [Go 1.12](https://golang.org/dl/) or above in the current environment, you can use the more convenient and quick [Hugo Modules](#install-with-hugo-modules) installation.
 
-When installing with Git Submodule, you only need to execute under the project location:
+When installing with Git Submodules, you only need to execute under the project location:
 
 ```shell
 git submodule add https://github.com/wangchucheng/hugo-eureka.git themes/eureka

@@ -21,13 +21,13 @@ aliases:
 
 >	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
 
-目前我们可以通过`Git Submodule`和`Hugo Modules`两种方式安装Eureka。接下来你将了解到如何更新Eureka。需要注意的是，你只能通过与安装相同的方式进行更新。
+目前我们可以通过`Git Submodules`和`Hugo Modules`两种方式安装Eureka。接下来你将了解到如何更新Eureka。需要注意的是，你只能通过与安装相同的方式进行更新。
 
-## 使用Git Submodule更新
+## 使用Git Submodules更新
 
-> 如果当前环境下拥有或愿意安装[Go 1.12](https://golang.org/dl/)及以上版本，可以[迁移至Hugo Modules](#由git-submodule迁移至hugo-modules)。
+> 如果当前环境下拥有或愿意安装[Go 1.12](https://golang.org/dl/)及以上版本，可以[迁移至Hugo Modules](#由git-submodules迁移至hugo-modules)。
 
-使用Git Submodule更新只需在项目根目录下执行：
+使用Git Submodules更新只需在项目根目录下执行：
 
 ```shell
 cd themes/eureka
@@ -55,17 +55,17 @@ hugo mod get github.com/wangchucheng/hugo-eureka@<eureka_version>
 
 Eureka的历史版本你可以在[Releases](https://github.com/wangchucheng/hugo-eureka/releases)中进行查看。
 
-## 由Git Submodule迁移至Hugo Modules
+## 由Git Submodules迁移至Hugo Modules
 
-由于Hugo Modules在管理上比Git Submodule更为方便快捷且Hugo Modules为Hugo推荐的添加主题的方式。推荐所有在当前环境下拥有或愿意安装[Go 1.12](https://golang.org/dl/)及以上版本的用户迁移至Hugo Modules。
+由于Hugo Modules在管理上比Git Submodules更为方便快捷且Hugo Modules为Hugo推荐的添加主题的方式。推荐所有在当前环境下拥有或愿意安装[Go 1.12](https://golang.org/dl/)及以上版本的用户迁移至Hugo Modules。
 
 ### 安装Go
 
 如需使用Hugo Modules的绝大部分功能，你需要拥有Go 1.12及以上版本。可以在[Go官网](https://golang.org/dl/)进行安装。
 
-### 删除Git Submodule
+### 删除Git Submodules
 
-删除Git Submodule你只需：
+删除Git Submodules你只需：
 
 ```shell
 git submodule deinit -f -- themes/eureka
@@ -85,7 +85,7 @@ hugo mod init <module_name>
 
 最后将`config/_default/config.yaml`中的`theme: eureka`注释并将`theme: github.com/wangchucheng/hugo-eureka`取消注释。
 
-这时你已经完成了由Git Submodule到Hugo Modules的迁移。
+这时你已经完成了由Git Submodules到Hugo Modules的迁移。
 
 ---
 

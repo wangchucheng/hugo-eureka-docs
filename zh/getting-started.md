@@ -25,18 +25,29 @@ weight: 1
 
 - [Git](https://git-scm.com/)
 - [Hugo v0.74.0+](https://gohugo.io/getting-started/installing/)
+- [Go 1.12+](https://golang.org/dl/) (使用Hugo Modules安装时)
 
-## 安装
+## 快速安装
 
-Eureka可以快速集成于Hugo项目中，目前Eureka可以通过[Git Submodule](#使用git-submodule安装)及[Hugo Modules](#使用hugo-modules安装)两种方式进行安装。
+Eureka可以通过使用Github模板[Hugo Eureka Starters](https://github.com/wangchucheng/hugo-eureka-starters)快速安装。
+
+使用此种方式时请点击页面上的`Use this template`按钮，并设置你的仓库信息。
+
+如果你希望使用Hugo Modules的方式进行安装，在输入信息后直接点击`Create repository from template`按钮即可。
+
+如果你希望使用Git Submodules的方式进行安装，在输入信息后请勾选`Include all branches`选项，再点击`Create repository from template`按钮。在仓库创建后，设置默认分支为`git-submodules`分支即可。
+
+## 手动安装
+
+Eureka可以快速集成于Hugo项目中，目前Eureka可以通过[Git Submodules](#使用git-submodules安装)及[Hugo Modules](#使用hugo-modules安装)两种方式进行安装。
 
 [Hugo Modules](#使用hugo-modules安装)需要[Go 1.12](https://golang.org/dl/)及以上版本，推荐所有拥有或愿意安装Go的用户使用此方式进行安装。
 
-### 使用Git Submodule安装
+### 使用Git Submodules安装
 
 > 如果当前环境下拥有或愿意安装[Go 1.12](https://golang.org/dl/)及以上版本，可以使用更为方便快捷的[Hugo Modules](#使用hugo-modules安装)进行安装。
 
-使用Git Submodule安装时您只需在项目位置下执行：
+使用Git Submodules安装时您只需在项目位置下执行：
 
 ```shell
 git submodule add https://github.com/wangchucheng/hugo-eureka.git themes/eureka
