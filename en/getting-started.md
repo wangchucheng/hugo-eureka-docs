@@ -33,7 +33,7 @@ When using this method, please click the `Use this template` button on the page 
 
 If you want to install with Hugo Modules, just click the `Create repository from template` button after entering the information.
 
-If you want to install with Git Submodules, please check the `Include all branches` option after entering the information, and then click the `Create repository from template` button. After the repository is created, set the default branch to the `git-submodules` branch.
+If you want to install with Git Submodules, please refer to the manual installation of [Install with Git Submodules](#install-with-git-submodules).
 
 ## Manual Installation
 

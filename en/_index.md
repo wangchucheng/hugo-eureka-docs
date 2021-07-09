@@ -27,7 +27,7 @@ If this project is helpful to you, you can give Eureka a [Star](https://github.c
 
 <a class="github-button" href="https://github.com/wangchucheng/hugo-eureka" data-size="large" aria-label="Star wangchucheng/hugo-eureka on GitHub">Star</a>
 
-Read [Getting Started](getting-started) to learn how to build and deploy your website. Or check the latest [Demo](https://themes.gohugo.io/theme/hugo-eureka/) and [Project Repository](https://github.com/wangchucheng/hugo-eureka/) to start exploring!
+Read [Getting Started](getting-started) to learn how to build and deploy your website. Or check the latest [Demo](https://hugo-eureka.netlify.app/) and [Project Repository](https://github.com/wangchucheng/hugo-eureka/) to start exploring!
 
 Eureka is a theme of continuous improvement. If you have any feature suggestions or encounter any problems, please feel free to [open an issue](https://github.com/wangchucheng/hugo-eureka/issues).
 

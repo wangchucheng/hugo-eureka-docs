@@ -35,7 +35,7 @@ Eureka可以通过使用Github模板[Hugo Eureka Starters](https://github.com/wa
 
 如果你希望使用Hugo Modules的方式进行安装，在输入信息后直接点击`Create repository from template`按钮即可。
 
-如果你希望使用Git Submodules的方式进行安装，在输入信息后请勾选`Include all branches`选项，再点击`Create repository from template`按钮。在仓库创建后，设置默认分支为`git-submodules`分支即可。
+如果你希望使用Git Submodules的方式进行安装，请参考手动安装的[使用Git Submodules安装](#git-submodules安装)。
 
 ## 手动安装
 

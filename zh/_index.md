@@ -29,7 +29,7 @@ Eureka致力于为[Hugo](https://gohugo.io/)提供一个优雅，功能丰富且
 
 <a class="github-button" href="https://github.com/wangchucheng/hugo-eureka" data-size="large" aria-label="Star wangchucheng/hugo-eureka on GitHub">Star</a>
 
-阅读[入门](getting-started)了解如何构建并部署你网站。或查看最新[示例网站](https://themes.gohugo.io/theme/hugo-eureka/)和[项目仓库](https://github.com/wangchucheng/hugo-eureka/)开始探索！
+阅读[入门](getting-started)了解如何构建并部署你网站。或查看最新[示例网站](https://hugo-eureka.netlify.app/)和[项目仓库](https://github.com/wangchucheng/hugo-eureka/)开始探索！
 
 Eureka是一个不断进步的主题。如果你有任何功能建议或遇到了任何问题，请随时[提出issue](https://github.com/wangchucheng/hugo-eureka/issues)。
 
