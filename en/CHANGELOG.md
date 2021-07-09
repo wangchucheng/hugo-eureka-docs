@@ -13,6 +13,14 @@ draft: false
 weight: 7
 ---
 
+## 0.8.2 (2021-07-09)
+
+
+### Bug Fixes
+
+* inconsistent utterances color scheme ([9ffd36e](https://github.com/wangchucheng/hugo-eureka/commit/9ffd36e6e03aeafec3a3c0778da0b7bb5b030b73)), closes [#122](https://github.com/wangchucheng/hugo-eureka/issues/122)
+
+
 ## 0.8.1 (2021-07-06)
 
 
