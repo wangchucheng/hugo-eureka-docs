@@ -48,7 +48,7 @@ hugo mod get -u
 If you want to specify a specific version, you just need to execute:
 
 ```shell
-hugo mod get github.com/wangchucheng/hugo-eureka@<eureka_version>
+hugo mod get wangchucheng.com/hugo-eureka@<eureka_version>
 ```
 
 You can view the historical version of Eureka in [Releases](https://github.com/wangchucheng/hugo-eureka/releases).
@@ -81,7 +81,7 @@ Use the following command to initialize Hugo Modules:
 hugo mod init <module_name>
 ```
 
-Finally, comment `theme: eureka` in `config/_default/config.yaml` and uncomment `theme: github.com/wangchucheng/hugo-eureka`.
+Finally, comment `theme: eureka` in `config/_default/config.yaml` and uncomment `theme: wangchucheng.com/hugo-eureka`.
 
 At this point you have completed the migration from Git Submodules to Hugo Modules.
 

@@ -50,7 +50,7 @@ hugo mod get -u
 如果你想指定特定版本，你只需执行：
 
 ```shell
-hugo mod get github.com/wangchucheng/hugo-eureka@<eureka_version>
+hugo mod get wangchucheng.com/hugo-eureka@<eureka_version>
 ```
 
 Eureka的历史版本你可以在[Releases](https://github.com/wangchucheng/hugo-eureka/releases)中进行查看。
@@ -83,7 +83,7 @@ git rm -f themes/eureka
 hugo mod init <module_name>
 ```
 
-最后将`config/_default/config.yaml`中的`theme: eureka`注释并将`theme: github.com/wangchucheng/hugo-eureka`取消注释。
+最后将`config/_default/config.yaml`中的`theme: eureka`注释并将`theme: wangchucheng.com/hugo-eureka`取消注释。
 
 这时你已经完成了由Git Submodules到Hugo Modules的迁移。
 

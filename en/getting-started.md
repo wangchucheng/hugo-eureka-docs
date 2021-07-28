@@ -82,7 +82,7 @@ hugo mod init <module_name>
 
 Next, copy the `config` folder in [exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite) to the project root directory, and check the contents of the `config` folder and configure it.
 
-Finally, comment `theme: eureka` in `config/_default/config.yaml` and uncomment `theme: github.com/wangchucheng/hugo-eureka`. After configuration, delete the original `config.toml` file.
+Finally, comment `theme: eureka` in `config/_default/config.yaml` and uncomment `theme: wangchucheng.com/hugo-eureka`. After configuration, delete the original `config.toml` file.
 
 If you create a new Hugo project, the `content` folder is blank in default. You can copy the `content` folder in [exampleSite](https://github.com/wangchucheng/hugo-eureka/tree/master/exampleSite) to the project root directory to preview.
 
