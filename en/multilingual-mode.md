@@ -29,14 +29,16 @@ After that, we need to continue to modify the relevant content of the navigation
 
 Finally, there are some `i18n` strings in Eureka. The languages currently officially supported by Eureka are:
  
--	Chinese
+-	Simplified Chinese
 -	English
 
 Languages provided by the community:
 
+-	Traditional Chinese
 -	French
 -	German
 -	Italian
+-	Japanese
 -	Korean
 -	Polish
 -	Russian
