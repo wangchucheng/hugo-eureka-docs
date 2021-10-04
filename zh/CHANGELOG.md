@@ -13,6 +13,19 @@ draft: false
 weight: 7
 ---
 
+## 0.8.3 (2021-10-04)
+
+
+### Bug Fixes
+
+* display description when exists ([920c3cc](https://github.com/wangchucheng/hugo-eureka/commit/920c3cce3e7004718c997045c05501a00195f056)), closes [#136](https://github.com/wangchucheng/hugo-eureka/issues/136)
+
+
+### Features
+
+* add zh-Hant and jp ([#129](https://github.com/wangchucheng/hugo-eureka/issues/129)) ([a3373a6](https://github.com/wangchucheng/hugo-eureka/commit/a3373a64948d827c178e13214423955ff58b854d))
+
+
 ## 0.8.2 (2021-07-09)
 
 
