@@ -13,6 +13,14 @@ draft: false
 weight: 7
 ---
 
+## 0.8.4 (2021-11-10)
+
+
+### Bug Fixes
+
+* purge css resources ([4aaf514](https://github.com/wangchucheng/hugo-eureka/commit/4aaf514e3d9fdd017fdb43ac74577741317ecefd))
+
+
 ## 0.8.3 (2021-10-04)
 
 
