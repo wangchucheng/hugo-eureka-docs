@@ -42,6 +42,7 @@ Languages provided by the community:
 -	Korean
 -	Polish
 -	Russian
+-	Spanish
 
 If you need translations in other languages, you can copy the [i18n](https://github.com/wangchucheng/hugo-eureka/tree/master/i18n) folder to the project In the root directory, add your language translation based on the content in it, and name it with the corresponding language code.
 
