@@ -35,6 +35,7 @@ Finally, there are some `i18n` strings in Eureka. The languages currently offici
 Languages provided by the community:
 
 -	Traditional Chinese
+-	Arabic
 -	French
 -	German
 -	Italian

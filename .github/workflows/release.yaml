@@ -1,0 +1,19 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release-eureka-docs:
+    runs-on: ubuntu-latest
+    name: Release Eureka
+    steps:
+      - name: Checkout Eureka Docs
+        uses: actions/checkout@v2
+      - name: Release Eureka Docs
+        uses: softprops/action-gh-release@v1
+        with:
+          generate_release_notes: true
+    

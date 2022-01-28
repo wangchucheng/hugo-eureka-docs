@@ -13,6 +13,22 @@ draft: false
 weight: 7
 ---
 
+## 0.9.0 (2022-01-28)
+
+
+### Bug Fixes
+
+* use min instead of mins in English ([15493ce](https://github.com/wangchucheng/hugo-eureka/commit/15493ce2560e6c36d53949a0534e4bdfa8acd1bc))
+* use purged css resources ([8771511](https://github.com/wangchucheng/hugo-eureka/commit/8771511cfe2c71b990aa567833b79f19e6ecf5ce))
+* use the singular form of experience ([9c3d616](https://github.com/wangchucheng/hugo-eureka/commit/9c3d6160dbf9ce9a4556d2746df4e105403e3d20))
+
+
+### Features
+
+* add RTL layout support and Arabic localization ([#159](https://github.com/wangchucheng/hugo-eureka/issues/159)) ([086f1e9](https://github.com/wangchucheng/hugo-eureka/commit/086f1e98c193943010f7e3b7889b8f2d0ac4e57b))
+* add Spanish i18n ([#145](https://github.com/wangchucheng/hugo-eureka/issues/145)) ([fc415d4](https://github.com/wangchucheng/hugo-eureka/commit/fc415d402af2d1de54c9bb6ec77f1515ca957355))
+
+
 ## 0.8.4 (2021-11-10)
 
 
