@@ -1,14 +1,14 @@
 ---
 title: Multilingual Mode
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
 categories: []
 series: []
-date: '2020-10-21T23:11:23+08:00'
-lastmod: '2020-10-21T23:11:23+08:00'
+date: "2020-10-21T23:11:23+08:00"
+lastmod: "2020-10-21T23:11:23+08:00"
 draft: false
 weight: 5
 ---
@@ -28,22 +28,23 @@ Next, uncomment the configuration of other languages, where you can modify the v
 After that, we need to continue to modify the relevant content of the navigation bar. First, please create a new `menus.<language_code>.yaml` file in the `config/_default/` folder, and copy the content in `menus.yaml` and make corresponding settings.
 
 Finally, there are some `i18n` strings in Eureka. The languages currently officially supported by Eureka are:
- 
--	Simplified Chinese
--	English
+
+- Simplified Chinese
+- English
 
 Languages provided by the community:
 
--	Traditional Chinese
--	Arabic
--	French
--	German
--	Italian
--	Japanese
--	Korean
--	Polish
--	Russian
--	Spanish
+- Traditional Chinese
+- Arabic
+- French
+- German
+- Italian
+- Japanese
+- Korean
+- Polish
+- Portuguese
+- Russian
+- Spanish
 
 If you need translations in other languages, you can copy the [i18n](https://github.com/wangchucheng/hugo-eureka/tree/master/i18n) folder to the project In the root directory, add your language translation based on the content in it, and name it with the corresponding language code.
 

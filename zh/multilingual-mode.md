@@ -1,23 +1,23 @@
 ---
 title: 多语言模式
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
 categories: []
 series: []
-date: '2020-10-21T23:11:23+08:00'
-lastmod: '2020-10-21T23:11:23+08:00'
+date: "2020-10-21T23:11:23+08:00"
+lastmod: "2020-10-21T23:11:23+08:00"
 draft: false
 weight: 5
 ---
 
-除了前文的[内容管理](../content-management/)以及[定制Eureka](../customization/)，Eureka也支持多语言模式。本文将带领你了解如何构建一个多语言网站。
+除了前文的[内容管理](../content-management/)以及[定制 Eureka](../customization/)，Eureka 也支持多语言模式。本文将带领你了解如何构建一个多语言网站。
 
 <!--more-->
 
->	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
+>     如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
 
 ## 多语言配置
 
@@ -29,23 +29,24 @@ weight: 5
 
 之后我们需要继续修改导航栏的相关内容。首先请在`config/_default/`文件夹中新建`menus.<language_code>.yaml`文件，并复制`menus.yaml`中的内容并进行相应设置。
 
-最后，Eureka中有一些`i18n`字符串。Eureka目前官方支持的语言为：
+最后，Eureka 中有一些`i18n`字符串。Eureka 目前官方支持的语言为：
 
--	简体中文
--	英文
+- 简体中文
+- 英文
 
 由社区提供的语言支持：
 
--	繁体中文
--	阿拉伯语
--	法语
--	德语
--	意大利语
--	日语
--	韩语
--	波兰语
--	俄语
--	西班牙语
+- 繁体中文
+- 阿拉伯语
+- 法语
+- 德语
+- 意大利语
+- 日语
+- 韩语
+- 波兰语
+- 葡萄牙语
+- 俄语
+- 西班牙语
 
 如果你需要其他语言的翻译，你可以将[i18n](https://github.com/wangchucheng/hugo-eureka/tree/master/i18n)文件夹复制到项目根目录中，并根据其中的内容添加你语言的翻译，并以相应的语言代码命名。
 
