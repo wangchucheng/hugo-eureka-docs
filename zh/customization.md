@@ -87,7 +87,7 @@ content/
 
 ## 评论
 
-Eureka支持使用Disqus，Utterances和Commento作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
+Eureka支持使用Disqus，Utterances，Valine，Waline和Commento作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
 
 Eureka也支持对每个界面是否启动评论进行单独配置。例如你有以下文件结构的项目：
 
@@ -114,7 +114,7 @@ content/
 
 **comment.handler(string)**
 
-可选值为`disqus`，`utterances`，`valine`及`commento`，留空则不启用该功能。
+可选值为`disqus`，`utterances`，`valine`，`waline`及`commento`，留空则不启用该功能。
 
 **comment.disqus.shortname(string)**
 
@@ -129,6 +129,12 @@ Utterances相关配置。具体可选值可参考：[utterances](https://utteran
 Valine相关配置。具体可选值可参考：[配置项 | Valine](https://valine.js.org/configuration.html)。
 
 因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`appId`应写作`app-Id`或其他有效形式。
+
+**comment.waline(object)**
+
+Waline相关配置，具体可选项可参考：[前端配置 | Waline](https://waline.js.org/reference/client.html)。注意在大写字母前加`-`或`_`，例如`pageSize`应写作`page_Size`或其他有效形式。
+
+暗黑模式跟随Eureka开启，如果需要自定义样式，可以在`layouts/partials/comment/waline.html`添加CSS覆盖，详细请见[自定义样式 | Waline](https://waline.js.org/guide/client/style.html)。
 
 **comment.commento.url**
 
