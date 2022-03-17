@@ -87,7 +87,7 @@ You can set the value of the `enableMath` attribute in the Front Matter of the f
 
 ## Comment
 
-Eureka supports using Disqus, Utterances and Commento as comment system。If you need to configure comment, you just need to configure the `comment` in `config/_default/params.yaml`
+Eureka supports using Disqus, Utterances, Valine, Waline and Commento as comment system。If you need to configure comment, you just need to configure the `comment` in `config/_default/params.yaml`
 
 Eureka also supports independent configuration of whether to enable comment for each page or section. For example, you have a project with the following file structure:
 
@@ -114,7 +114,7 @@ You can set the value of the `enableComment` attribute in the Front Matter of th
 
 **comment.handler(string)**
 
-The optional value is `disqus`, `utterances`, `valine` and `commento`, leave it blank to disable this feature.
+The optional value is `disqus`, `utterances`, `valine`, `waline` and `commento`, leave it blank to disable this feature.
 
 **comment.disqus.shortname(string)**
 
@@ -129,6 +129,12 @@ Utterances related configuration. For specific optional values, please refer to:
 Valine related configuration. For specific optional values, please refer to: [Config Reference | Valine](https://valine.js.org/en/configuration.html).
 
 Because Hugo's config params are case-insensitive, you need to add `-` or `_` before the uppercase letters. For example, `appId` should be written as `app-Id` or other acceptable formats.
+
+**comment.waline(object)**
+
+Waline related configuration. For specific optional values, please refer to: [Client Options | Waline](https://waline.js.org/en/reference/client.html).Note that you need to add `-` or `_` before the uppercase letters. For example, `pageSize` should be written as `page_Size` or other acceptable formats.
+
+Dark mode follows Eureka on, if you need to customize the style, you can add CSS style in `layouts/partials/comment/waline.html` to override, for more details, please refer to [Custom style | Waline](https://waline.js.org/en/guide/client/style.html).
 
 **comment.commento.url**
 
