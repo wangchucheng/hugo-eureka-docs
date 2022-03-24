@@ -1,7 +1,7 @@
 ---
 title: Customize Eureka
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
@@ -18,6 +18,12 @@ aliases:
 In [Content Management](../content-management), you have already learned about all kinds of content of Eureka. Next, we will introduce Eureka's customization options. Customize Eureka will lead you to understand how Eureka is configured and its options.
 
 <!--more-->
+
+## Style
+
+You can customize the colors and fonts of Eureka by setting the `style` param in `config/_default/params.yaml`. Set this param to `default` or leave it blank to use the default style.
+
+If you want to customize the style, you can create a config file with the style name you want in `data/styles/`. Then you can set the `style` param to your style name. You can refer to the [default style](https://github.com/wangchucheng/hugo-eureka/blob/master/data/styles/default.yaml) to see available params of a style.
 
 ## Navigation Bar
 

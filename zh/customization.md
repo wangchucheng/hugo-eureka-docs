@@ -1,7 +1,7 @@
 ---
 title: 定制Eureka
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
@@ -15,13 +15,19 @@ aliases:
   - customize-eureka
 ---
 
-在[内容管理](../content-management)中，你已经了解了Eureka的各类内容。接下来我们将介绍Eureka的定制化选项。本文将带领你了解Eureka的配置方式及其选项。
+在[内容管理](../content-management)中，你已经了解了 Eureka 的各类内容。接下来我们将介绍 Eureka 的定制化选项。本文将带领你了解 Eureka 的配置方式及其选项。
 
 <!--more-->
 
+## 样式
+
+你可以通过设置`config/_default/params.yaml`中的`style`属性自定义 Eureka 的颜色及字体。将该属性设置为`default`或留空将会使用默认样式。
+
+如果你希望自定义样式，你可以在`data/styles/`中创建一个以你的样式名称命名的配置文件。接下来将`style`属性设置为你的样式名称即可。你可以参考[默认样式](https://github.com/wangchucheng/hugo-eureka/blob/master/data/styles/default.yaml)中可配置的属性。
+
 ## 导航栏
 
-你可以简单快捷的定义网页导航栏的内容。在`config/_default/menus.yaml`中，有多个`main`模块，只需根据示例文件中的内容进行修改即可。例如在导航栏加入archive页只需加入以下内容即可：
+你可以简单快捷的定义网页导航栏的内容。在`config/_default/menus.yaml`中，有多个`main`模块，只需根据示例文件中的内容进行修改即可。例如在导航栏加入 archive 页只需加入以下内容即可：
 
 ```yaml
 main:
@@ -34,23 +40,23 @@ main:
 
 ## 代码高亮
 
-Eureka使用highlight.js渲染代码高亮。如需配置highlight.js，只需对`config/_default/params.yaml`中的`highlight`进行相关配置即可。
+Eureka 使用 highlight.js 渲染代码高亮。如需配置 highlight.js，只需对`config/_default/params.yaml`中的`highlight`进行相关配置即可。
 
 **highlight.handler(string)**
 
-可选值为highlightjs。
+可选值为 highlightjs。
 
 **highlight.highlightjs.languages(list)**
 
-highlight.js默认会包含部分常见语言，通过该属性可配置默认语言外的其他语言。查看[可用的语言](https://github.com/highlightjs/cdn-release/tree/master/build/languages)。
+highlight.js 默认会包含部分常见语言，通过该属性可配置默认语言外的其他语言。查看[可用的语言](https://github.com/highlightjs/cdn-release/tree/master/build/languages)。
 
 **highlight.highlightjs.style(string)**
 
-Eureka默认使用highlight.js的solarized-light样式，通过该属性可配置使用的样式。查看[可用的样式](https://github.com/highlightjs/cdn-release/tree/master/build/styles)。
+Eureka 默认使用 highlight.js 的 solarized-light 样式，通过该属性可配置使用的样式。查看[可用的样式](https://github.com/highlightjs/cdn-release/tree/master/build/styles)。
 
 ## 数学公式
 
-Eureka支持使用KaTeX渲染LaTeX数学公式。如需配置KaTeX，只需对`config/_default/params.yaml`中的`math`进行相关配置即可。
+Eureka 支持使用 KaTeX 渲染 LaTeX 数学公式。如需配置 KaTeX，只需对`config/_default/params.yaml`中的`math`进行相关配置即可。
 
 **math.handler(string)**
 
@@ -58,11 +64,11 @@ Eureka支持使用KaTeX渲染LaTeX数学公式。如需配置KaTeX，只需对`c
 
 **math.katex(object)**
 
-KaTeX相关配置。具体可选值可参考：[Options · KaTeX](https://katex.org/docs/options.html)。由于Eureka使用了KaTeX的自动渲染拓展，因此链接中的`displayMode`属性将会被忽略。
+KaTeX 相关配置。具体可选值可参考：[Options · KaTeX](https://katex.org/docs/options.html)。由于 Eureka 使用了 KaTeX 的自动渲染拓展，因此链接中的`displayMode`属性将会被忽略。
 
-因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`throwOnError`应写作`throw-On-Error`或其他有效形式。
+因为 Hugo 的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`throwOnError`应写作`throw-On-Error`或其他有效形式。
 
-Eureka也支持对每个界面是否启动数学公式渲染进行单独配置。例如你有以下文件结构的项目：
+Eureka 也支持对每个界面是否启动数学公式渲染进行单独配置。例如你有以下文件结构的项目：
 
 ```
 content/
@@ -83,13 +89,13 @@ content/
     └── ...
 ```
 
-你可以在任意一级文件的Front Matter内设置`enableMath`属性的值，这会影响该页面或该章节下的所有页面。优先级为Page > Section > Site。例如我在`nested-doc`的Front Matter中设置`enableMath: fasle`而在`nested-content-1.md`的Front Matter中设置`enableMath: true`则会使`nested-content-1.md`渲染数学公式而`nested-doc`文件夹中的其他文件不进行渲染。
+你可以在任意一级文件的 Front Matter 内设置`enableMath`属性的值，这会影响该页面或该章节下的所有页面。优先级为 Page > Section > Site。例如我在`nested-doc`的 Front Matter 中设置`enableMath: fasle`而在`nested-content-1.md`的 Front Matter 中设置`enableMath: true`则会使`nested-content-1.md`渲染数学公式而`nested-doc`文件夹中的其他文件不进行渲染。
 
 ## 评论
 
-Eureka支持使用Disqus，Utterances和Commento作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
+Eureka 支持使用 Disqus，Utterances 和 Commento 作为评论系统。如需配置评论，只需对`config/_default/params.yaml`中的`comment`进行相关配置即可。
 
-Eureka也支持对每个界面是否启动评论进行单独配置。例如你有以下文件结构的项目：
+Eureka 也支持对每个界面是否启动评论进行单独配置。例如你有以下文件结构的项目：
 
 ```
 content/
@@ -110,7 +116,7 @@ content/
     └── ...
 ```
 
-你可以在任意一级文件的Front Matter内设置`enableComment`属性的值，这会影响该页面或该章节下的所有页面。优先级为Page > Section > Site。例如我在`nested-doc`的Front Matter中设置`enableComment: fasle`而在`nested-content-1.md`的Front Matter中设置`enableCommenth: true`则会使`nested-content-1.md`启用评论而`nested-doc`文件夹中的其他文件不启用评论。
+你可以在任意一级文件的 Front Matter 内设置`enableComment`属性的值，这会影响该页面或该章节下的所有页面。优先级为 Page > Section > Site。例如我在`nested-doc`的 Front Matter 中设置`enableComment: fasle`而在`nested-content-1.md`的 Front Matter 中设置`enableCommenth: true`则会使`nested-content-1.md`启用评论而`nested-doc`文件夹中的其他文件不启用评论。
 
 **comment.handler(string)**
 
@@ -118,25 +124,25 @@ content/
 
 **comment.disqus.shortname(string)**
 
-Disqus的shortname值。
+Disqus 的 shortname 值。
 
 **comment.utterances(object)**
 
-Utterances相关配置。具体可选值可参考：[utterances](https://utteranc.es/)。如果你希望Utterances的色彩模式跟随Eureka，只需将配置项中的`theme`设为`eureka`即可。
+Utterances 相关配置。具体可选值可参考：[utterances](https://utteranc.es/)。如果你希望 Utterances 的色彩模式跟随 Eureka，只需将配置项中的`theme`设为`eureka`即可。
 
 **comment.valine(object)**
 
-Valine相关配置。具体可选值可参考：[配置项 | Valine](https://valine.js.org/configuration.html)。
+Valine 相关配置。具体可选值可参考：[配置项 | Valine](https://valine.js.org/configuration.html)。
 
-因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`appId`应写作`app-Id`或其他有效形式。
+因为 Hugo 的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`appId`应写作`app-Id`或其他有效形式。
 
 **comment.commento.url**
 
-如果你的commento为自托管的，该值为你的网址(例如https://commento.example.com)。否则留空。
+如果你的 commento 为自托管的，该值为你的网址(例如https://commento.example.com)。否则留空。
 
 ## 图表
 
-Eureka支持使用Mermaid渲染图表。如需配置Mermaid，只需对`config/_default/params.yaml`中的`diagram`进行相关配置即可。
+Eureka 支持使用 Mermaid 渲染图表。如需配置 Mermaid，只需对`config/_default/params.yaml`中的`diagram`进行相关配置即可。
 
 **diagram.handler(string)**
 
@@ -144,9 +150,9 @@ Eureka支持使用Mermaid渲染图表。如需配置Mermaid，只需对`config/_
 
 **diagram.mermaid(object)**
 
-Mermaid相关配置。具体可选值可参考：[Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup)。
+Mermaid 相关配置。具体可选值可参考：[Configuration handling in Mermaid API](https://mermaid-js.github.io/mermaid/#/Setup)。
 
-因为Hugo的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`diagramPadding`应写作`diagram-Padding`或其他有效形式。
+因为 Hugo 的配置文件为大小写不敏感的，因此你需要在大写字母前添加`-`或`_`。例如，`diagramPadding`应写作`diagram-Padding`或其他有效形式。
 
 ## 基本配置文件
 
@@ -174,15 +180,15 @@ Mermaid相关配置。具体可选值可参考：[Configuration handling in Merm
 
 **enableGitInfo(bool)**
 
-是否使用git信息。默认为`false`。
+是否使用 git 信息。默认为`false`。
 
 **enableEmoji(bool)**
 
-是否使用emoji，默认为`false`。
+是否使用 emoji，默认为`false`。
 
 **summaryLength(int)**
 
-概要长度，默认为70。
+概要长度，默认为 70。
 
 **defaultContentLanguage(string)**
 
@@ -198,7 +204,7 @@ Mermaid相关配置。具体可选值可参考：[Configuration handling in Merm
 
 **googleAnalytics(string)**
 
-Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境中生成。如果你想在开发环境中预览，你需要设置Hugo环境变量为`production`。
+Google Analytics 代码。从`0.2.1`开始，Google Analytics 只在生产环境中生成。如果你想在开发环境中预览，你需要设置 Hugo 环境变量为`production`。
 
 **markup.tableOfContents(object)**
 
@@ -218,7 +224,7 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 **taxonomies(object)**
 
-网站中的所有Taxonomies。
+网站中的所有 Taxonomies。
 
 **build(object)**
 
@@ -228,11 +234,11 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 使用缓存文件进行渲染，如无特殊情况请保持`always`。
 
-除此之外，Hugo还有一些预定义的基本配置，具体可参考[Configure Hugo](https://gohugo.io/getting-started/configuration/)。
+除此之外，Hugo 还有一些预定义的基本配置，具体可参考[Configure Hugo](https://gohugo.io/getting-started/configuration/)。
 
 ## 参数配置文件
 
-除了基本配置外，你还可以设置一些Eureka提供的属性。本章节将不涉及前文已包含的内容。
+除了基本配置外，你还可以设置一些 Eureka 提供的属性。本章节将不涉及前文已包含的内容。
 
 **mainSections(list)**
 
@@ -244,11 +250,11 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 **repoEditURL(string)**
 
-内容编辑网址，可在`params.yaml`或Front Matters中定义。值为当前目录对应的仓库编辑地址。
+内容编辑网址，可在`params.yaml`或 Front Matters 中定义。值为当前目录对应的仓库编辑地址。
 
 例如在`params.yaml`中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>`即可在每篇文章最下方显示对应链接。
 
-如果只想显示`content/docs`中的内容则可在该文件夹的`_index.md`的Front Matters中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>/content/docs`。其他各层次同理。
+如果只想显示`content/docs`中的内容则可在该文件夹的`_index.md`的 Front Matters 中定义`repoEditURL: https://github.com/<username>/<repo>/blob/<branch>/content/docs`。其他各层次同理。
 
 **titleSeparator(string/list)**
 
@@ -260,7 +266,7 @@ Google Analytics代码。从`0.2.1`开始，Google Analytics只在生产环境�
 
 **dateFormat(string)**
 
-网站中显示日期的格式，配置应满足Go语言的[相应格式](https://gohugo.io/functions/format/#gos-layout-string)。
+网站中显示日期的格式，配置应满足 Go 语言的[相应格式](https://gohugo.io/functions/format/#gos-layout-string)。
 
 **colorScheme(string)**
 
