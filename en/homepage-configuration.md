@@ -1,19 +1,19 @@
 ---
 title: Homepage Configuration
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
 categories: []
 series: []
-date: '2020-12-27T17:50:15+08:00'
-lastmod: '2020-12-27T17:50:15+08:00'
+date: "2020-12-27T17:50:15+08:00"
+lastmod: "2020-12-27T17:50:15+08:00"
 draft: false
 weight: 2
 ---
 
-In [Getting Started](../getting-started), I believe you have successfully run the Hugo website using Eureka theme. In this article you will learn how to configure the website homepage.
+In [Getting Started](../getting-started/), I believe you have successfully run the Hugo website using Eureka theme. In this article you will learn how to configure the website homepage.
 
 <!--more-->
 
@@ -23,11 +23,11 @@ Eureka provides a powerful and flexible widget system to build a homepage. The w
 
 Eureka currently provides these widgets:
 
--	**pages**：Display pages in multiple forms such as list or card.
--	**about**：A widget that displays information about the website author.
--	**vintage**：The classic Eureka homepage component.
--	**blank**：Completely customizable widget.
--	**experiences**: Displays cards containing information such as position/title, organization, some dates, location, title, and a writeup.
+- **pages**：Display pages in multiple forms such as list or card.
+- **about**：A widget that displays information about the website author.
+- **vintage**：The classic Eureka homepage component.
+- **blank**：Completely customizable widget.
+- **experiences**: Displays cards containing information such as position/title, organization, some dates, location, title, and a writeup.
 
 The content of the homepage is defined by the files in the `content/homepage` folder, and each widget corresponds to a file.
 
@@ -43,7 +43,7 @@ If your website has multiple languages, you can use this command to new:
 hugo new -k homepage content/en/homepage
 ```
 
->	So far, if you use Hugo Modules to install Eureka, this command cannot create the folder correctly. You need to manually copy the [homepage](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/homepage) folder to your `content` folder.
+>     So far, if you use Hugo Modules to install Eureka, this command cannot create the folder correctly. You need to manually copy the [homepage](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/homepage) folder to your `content` folder.
 
 ## New Widget
 
@@ -92,7 +92,6 @@ The position of the sidebar. The optional values are left and right. Leave blank
 The width of the sidebar. The optional values are sm, md, lg and xl. The default is md.
 
 **background.color(string)**
-	
 Background color, optional values are primary, secondary, tertiary and any valid color value in css. The default is primary. The background image has priority over the background color.
 
 **background.image(string)**
@@ -191,7 +190,7 @@ Optional. This string is shown beside the organization name string below the tit
 Markdown formatting is enabled.
 
 **experiences.writeup(string)**
-Optional. This string is what is shown at the bottom of the card below all other parameters. Markdown formatting is enabled. 
+Optional. This string is what is shown at the bottom of the card below all other parameters. Markdown formatting is enabled.
 
 To allow line breaks and bullet points, a blank line is required between each seperate line. Example below.
 

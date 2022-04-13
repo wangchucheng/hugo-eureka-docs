@@ -15,7 +15,7 @@ aliases:
   - customize-eureka
 ---
 
-In [Content Management](../content-management), you have already learned about all kinds of content of Eureka. Next, we will introduce Eureka's customization options. Customize Eureka will lead you to understand how Eureka is configured and its options.
+In [Content Management](../content-management/), you have already learned about all kinds of content of Eureka. Next, we will introduce Eureka's customization options. Customize Eureka will lead you to understand how Eureka is configured and its options.
 
 <!--more-->
 

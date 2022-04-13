@@ -1,29 +1,29 @@
 ---
 title: 内容管理
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
 categories: []
 series: []
-date: '2020-10-20T10:30:48+08:00'
+date: "2020-10-20T10:30:48+08:00"
 lastmod: 2020-11-22T03:54:28.000Z
 draft: false
 weight: 3
 ---
 
-在[主页配置](../homepage-configuration)中，你已经成功地构建了网站主页。接下来我们将添加一些内容。本文将带领你了解网站内容结构及编辑技巧。
+在[主页配置](../homepage-configuration/)中，你已经成功地构建了网站主页。接下来我们将添加一些内容。本文将带领你了解网站内容结构及编辑技巧。
 
 <!--more-->
 
->	如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
+>     如果你的区域存在难以访问GitHub的问题，你可以将所有涉及到GitHub的网址替换为[Gitee镜像](https://gitee.com/wangchucheng/hugo-eureka/)。例如将`https://github.com/wangchucheng/hugo-eureka/`替换为`https://gitee.com/wangchucheng/hugo-eureka/`即可。
 
 ## 目录结构
 
 对于单一语言的项目，你可以在项目根目录下的`content`文件夹中管理内容。对于多语言项目，内容则处在特定语言的目录下，例如`content/zh/`。
 
-内容根目录的内容一般根据网站模块及其结构进行分类，例如我们一般将博客文章储存于`content/posts/`中。Eureka目前的提供的主要类型为：
+内容根目录的内容一般根据网站模块及其结构进行分类，例如我们一般将博客文章储存于`content/posts/`中。Eureka 目前的提供的主要类型为：
 
 - 文章页
 - 文档页
@@ -31,13 +31,13 @@ weight: 3
 
 ### 新建文章页
 
-文章内容为Eureka默认的文章结构，因此新建文章页时不需指定其类型。
+文章内容为 Eureka 默认的文章结构，因此新建文章页时不需指定其类型。
 
 ```shell
 hugo new posts/<your_post.md>
 ```
 
-以上命令可以在`content/posts/`文件夹中新建一个包含默认Front Matter的Markdown文件。
+以上命令可以在`content/posts/`文件夹中新建一个包含默认 Front Matter 的 Markdown 文件。
 
 ### 新建文档页
 
@@ -47,7 +47,7 @@ hugo new posts/<your_post.md>
 hugo new -k docs docs/<your_doc>/<your_page.md>
 ```
 
-以上命令可以在`content/docs/<your_doc>/`文件夹中新建一个包含默认文档内容的Markdown文件。
+以上命令可以在`content/docs/<your_doc>/`文件夹中新建一个包含默认文档内容的 Markdown 文件。
 
 如果你此前没有创建过文档类型的内容，你需要先生成文档列表：
 
@@ -55,11 +55,11 @@ hugo new -k docs docs/<your_doc>/<your_page.md>
 hugo new -k docs docs
 ```
 
->	到目前为止，如果你使用了Hugo Modules安装主题，该命令无法正确创建文件夹。你需要手动将[docs](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/docs)文件夹复制到你的`content`文件夹中。
+>     到目前为止，如果你使用了Hugo Modules安装主题，该命令无法正确创建文件夹。你需要手动将[docs](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/docs)文件夹复制到你的`content`文件夹中。
 
 ### 多版本文档
 
-Eureka支持多版本文档。你只需将历史版本全部内容复制到名称为版本号的子文件夹下即可。版本号需遵循[语义化版本](https://semver.org/)，版本号最前是否包含`v`均可以被正常识别。
+Eureka 支持多版本文档。你只需将历史版本全部内容复制到名称为版本号的子文件夹下即可。版本号需遵循[语义化版本](https://semver.org/)，版本号最前是否包含`v`均可以被正常识别。
 
 以如下目录结构为例：
 
@@ -74,7 +74,7 @@ content
 │      │      │      ├── content2.md
 │      │      │      └── _index.md
 │      │      └── _index.md
-│      └── ...   
+│      └── ...
 └── ...
 ```
 
@@ -92,7 +92,7 @@ hugo new -k authors authors/<your_author>
 
 ## 文件结构
 
-Hugo的内容文件主要由两部分组成，文件最前部的Front Matter及之后的正文部分。Front Matter可以使用toml，yaml或json形式。正文部分则遵循Markdown语法。
+Hugo 的内容文件主要由两部分组成，文件最前部的 Front Matter 及之后的正文部分。Front Matter 可以使用 toml，yaml 或 json 形式。正文部分则遵循 Markdown 语法。
 
 ```yaml
 ---
@@ -103,19 +103,18 @@ authors: []
 tags: []
 categories: []
 series: []
-...
 ---
 ```
 
-以上为一个基本的Front Matter的样式。你可以通过其设置各类属性。
+以上为一个基本的 Front Matter 的样式。你可以通过其设置各类属性。
 
-如果你需要了解Hugo预定义的Front Matter或更多关于Front Matter的内容，可以参考Hugo的[相关文档](https://gohugo.io/content-management/front-matter/)。
+如果你需要了解 Hugo 预定义的 Front Matter 或更多关于 Front Matter 的内容，可以参考 Hugo 的[相关文档](https://gohugo.io/content-management/front-matter/)。
 
 ## Front Matter
 
 ### 文章页参数
 
-文章页有以下常用Front Matter参数：
+文章页有以下常用 Front Matter 参数：
 
 - **title(string)**：文章标题。
 - **description(string)**：文章描述。
@@ -130,11 +129,11 @@ series: []
 - **featuredImage(string)**：文章精选图片，相关操作可参考[加载图片](#加载图片)。
 - **draft(bool)**：是否为草稿，默认为`true`。
 
-如果你需要了解Hugo预定义的Front Matter，可以参考Hugo的[相关文档](https://gohugo.io/content-management/front-matter/)。
+如果你需要了解 Hugo 预定义的 Front Matter，可以参考 Hugo 的[相关文档](https://gohugo.io/content-management/front-matter/)。
 
 ### 文档页参数
 
-文档页有以下常用Front Matter参数：
+文档页有以下常用 Front Matter 参数：
 
 - **title(string)**：文档该页标题。
 - **description(string)**：文档该页描述。
@@ -145,11 +144,11 @@ series: []
 - **featuredImage(string)**：文档该页精选图片，相关操作可参考[加载图片](#加载图片)。
 - **draft(bool)**：是否为草稿，默认为`true`。
 
-如果你需要了解Hugo预定义的Front Matter，可以参考Hugo的[相关文档](https://gohugo.io/content-management/front-matter/)。
+如果你需要了解 Hugo 预定义的 Front Matter，可以参考 Hugo 的[相关文档](https://gohugo.io/content-management/front-matter/)。
 
 ### 作者页参数
 
-作者页有以下常用Front Matter参数：
+作者页有以下常用 Front Matter 参数：
 
 - **title(string)**：作者姓名。
 - **role(string)**：作者角色。
@@ -159,43 +158,41 @@ series: []
   - **name(string)**：机构姓名。
   - **url(stirng)**：机构网址。
 - **social(array)**：社交媒体信息。
-  - **icon(string)**：社交媒体名称。可用的图标可以在[Font Awesome](https://fontawesome.com/)上进行查询。查询后你可以获得类似`<i class="fab fa-github"></i>`的结果。icon的值即为github。
-  - **iconPack(string)**：社交媒体包名。iconPack的值为上一项中的fab。
+  - **icon(string)**：社交媒体名称。可用的图标可以在[Font Awesome](https://fontawesome.com/)上进行查询。查询后你可以获得类似`<i class="fab fa-github"></i>`的结果。icon 的值即为 github。
+  - **iconPack(string)**：社交媒体包名。iconPack 的值为上一项中的 fab。
   - **url(string)**：社交媒体链接。
 
-如果你需要了解Hugo预定义的Front Matter，可以参考Hugo的[相关文档](https://gohugo.io/content-management/front-matter/)。
+如果你需要了解 Hugo 预定义的 Front Matter，可以参考 Hugo 的[相关文档](https://gohugo.io/content-management/front-matter/)。
 
 ## 数学公式
 
-Eureka支持使用KaTeX渲染数学公式。你可以在[定制Eureka](../customization/#数学公式)中找到配置KaTeX的方式。
+Eureka 支持使用 KaTeX 渲染数学公式。你可以在[定制 Eureka](../customization/#数学公式)中找到配置 KaTeX 的方式。
 
 你可以使用`$...$`或`\(...\)`输入行内公式，使用`&&...&&`或`\[...\]`输入行间公式。
 
-在文档中输入时，由于部分Markdown语法会与LaTeX冲突（例如`_`与`\`），可能会导致TeX代码被Markdown渲染器处理，而显示错误的结果。Eureka提供了两种解决方案。
+在文档中输入时，由于部分 Markdown 语法会与 LaTeX 冲突（例如`_`与`\`），可能会导致 TeX 代码被 Markdown 渲染器处理，而显示错误的结果。Eureka 提供了两种解决方案。
 
-第一种方案是你可以使用`\\`代替`\`以及`\\_`代替`_`解决此问题，但这意味着你需要修改你的LaTeX公式，导致了迁移的困难。
+第一种方案是你可以使用`\\`代替`\`以及`\\_`代替`_`解决此问题，但这意味着你需要修改你的 LaTeX 公式，导致了迁移的困难。
 
-第二种方式则是使用html标签包裹公式块，此种方法只能针对行间公式。可将行间公式包裹在`<div>`内：
+第二种方式则是使用 html 标签包裹公式块，此种方法只能针对行间公式。可将行间公式包裹在`<div>`内：
 
 ```html
-<div>
-your_displayed_equation
-</div>
+<div>your_displayed_equation</div>
 ```
 
 需要注意的是，在使用这种方法时，在`config.yaml`配置文件中的`markup.goldmark.renderer`的`unsafe`属性应设为`true`。
 
 ## 加载视频
 
-Eureka中有一些需要加载视频的地方，例如精选视频。Eureka提供了多种视频加载方式，这些方式都需要通过在Front Matter中指定路径来实现。视频链接支持本地视频以及外链。
+Eureka 中有一些需要加载视频的地方，例如精选视频。Eureka 提供了多种视频加载方式，这些方式都需要通过在 Front Matter 中指定路径来实现。视频链接支持本地视频以及外链。
 
-对于本地存储的视频，你可以将视频存储于项目根目录下的`static`文件夹，并在配置文件中填写其相对路径。例如将`example.mp4`存储于`assets/videos/example.mp4`，你只需将Front Matter中对应属性（例如featuredVideo）设置为：
+对于本地存储的视频，你可以将视频存储于项目根目录下的`static`文件夹，并在配置文件中填写其相对路径。例如将`example.mp4`存储于`assets/videos/example.mp4`，你只需将 Front Matter 中对应属性（例如 featuredVideo）设置为：
 
 ```yaml
 featuredVideo: videos/example.mp4
 ```
 
-对于视频网站的分享视频，你只需将Front Matter对应属性（例如featuredVideo）的值设置为视频播放器url即可。需要注意的是，视频播放器url并非视频网站的网址，而是其嵌入代码（一般为iframe）中`src`属性的值。
+对于视频网站的分享视频，你只需将 Front Matter 对应属性（例如 featuredVideo）的值设置为视频播放器 url 即可。需要注意的是，视频播放器 url 并非视频网站的网址，而是其嵌入代码（一般为 iframe）中`src`属性的值。
 
 ```yaml
 featuredVideo: https://example.com
@@ -203,7 +200,7 @@ featuredVideo: https://example.com
 
 ## 加载图片
 
-Eureka中有许多需要加载图片的地方，例如主页图片或作者头像等。Eureka提供了非常丰富的图像加载方式：
+Eureka 中有许多需要加载图片的地方，例如主页图片或作者头像等。Eureka 提供了非常丰富的图像加载方式：
 
 ### 在配置文件中添加图片
 
@@ -217,15 +214,15 @@ imgLeft: images/example.jpg
 
 需要注意的是，`icon`属性只能存储于`assets`文件夹中。
 
-对于外链图片，你只需将配置文件对应属性的值设置为图片url即可。
+对于外链图片，你只需将配置文件对应属性的值设置为图片 url 即可。
 
 ```yaml
 imgLeft: https://example.com
 ```
 
-### 在Front Matter中添加图片
+### 在 Front Matter 中添加图片
 
-有时我们需要在内容的Front Matter中添加图片，例如作者头像。除了[在配置文件中添加图片](#在配置文件中添加图片)提到的两种方式外，你还可以将图片以特定文件名命名并存储于内容的同一文件夹下。
+有时我们需要在内容的 Front Matter 中添加图片，例如作者头像。除了[在配置文件中添加图片](#在配置文件中添加图片)提到的两种方式外，你还可以将图片以特定文件名命名并存储于内容的同一文件夹下。
 
 以下为当前属性的命名方式：
 

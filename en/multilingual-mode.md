@@ -13,7 +13,7 @@ draft: false
 weight: 5
 ---
 
-In addition to [Content Management](content-management) and [Customize Eureka](customization) described above, Eureka also supports Multilingual Mode. Multilingual Mode will lead you to understand how to build a multilingual site.
+In addition to [Content Management](../content-management/) and [Customize Eureka](../customization/) described above, Eureka also supports Multilingual Mode. Multilingual Mode will lead you to understand how to build a multilingual site.
 
 <!--more-->
 

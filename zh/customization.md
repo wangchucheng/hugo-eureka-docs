@@ -15,7 +15,7 @@ aliases:
   - customize-eureka
 ---
 
-在[内容管理](../content-management)中，你已经了解了 Eureka 的各类内容。接下来我们将介绍 Eureka 的定制化选项。本文将带领你了解 Eureka 的配置方式及其选项。
+在[内容管理](../content-management/)中，你已经了解了 Eureka 的各类内容。接下来我们将介绍 Eureka 的定制化选项。本文将带领你了解 Eureka 的配置方式及其选项。
 
 <!--more-->
 

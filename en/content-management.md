@@ -1,7 +1,7 @@
 ---
 title: Content Management
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
@@ -13,7 +13,7 @@ draft: false
 weight: 3
 ---
 
-In [Getting Started](../getting-started), I believe you have successfully run the Hugo website using Eureka theme. Next we will add some content. This article will lead you to understand the structure of the website content and editing skills.
+In [Getting Started](../getting-started/), I believe you have successfully run the Hugo website using Eureka theme. Next we will add some content. This article will lead you to understand the structure of the website content and editing skills.
 
 <!--more-->
 
@@ -53,7 +53,7 @@ If you have not created the content of the document type before, you need to gen
 hugo new -k docs docs
 ```
 
->	So far, if you use Hugo Modules to install Eureka, this command cannot create the folder correctly. You need to manually copy the [docs](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/docs) folder to your `content` folder.
+>     So far, if you use Hugo Modules to install Eureka, this command cannot create the folder correctly. You need to manually copy the [docs](https://github.com/wangchucheng/hugo-eureka/tree/master/archetypes/docs) folder to your `content` folder.
 
 ### Multi-version document
 
@@ -72,7 +72,7 @@ content
 │      │      │      ├── content2.md
 │      │      │      └── _index.md
 │      │      └── _index.md
-│      └── ...   
+│      └── ...
 └── ...
 ```
 
@@ -101,7 +101,6 @@ authors: []
 tags: []
 categories: []
 series: []
-...
 ---
 ```
 
@@ -176,10 +175,9 @@ The first solution is that you can use `\\` instead of `\` and `\\_` instead of 
 The second method is to use html tags to wrap the formula block, this method can only be used for displayed equations. You can wrap the line formula in `<div>`:
 
 ```html
-<div>
-your_displayed_equation
-</div>
+<div>your_displayed_equation</div>
 ```
+
 It should be noted that when using this method, the `unsafe` attribute of `markup.goldmark.renderer` in the `config.yaml` configuration file should be set to `true`.
 
 ## Video Loading
