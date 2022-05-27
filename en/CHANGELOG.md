@@ -13,6 +13,18 @@ draft: false
 weight: 7
 ---
 
+## 0.9.2 (2022-05-27)
+
+### Bug Fixes
+
+- can not use cached resources ([5e41c2d](https://github.com/wangchucheng/hugo-eureka/commit/5e41c2d9c3374da3380bd65d732bb872fca6a5a6)), closes [#193](https://github.com/wangchucheng/hugo-eureka/issues/193)
+- change same origin asset integrity check ([60d9290](https://github.com/wangchucheng/hugo-eureka/commit/60d92907bbdc238a6b4a18d64225cfdf93b817d5)), closes [#172](https://github.com/wangchucheng/hugo-eureka/issues/172) [#180](https://github.com/wangchucheng/hugo-eureka/issues/180)
+- fail to get default style ([04c91ff](https://github.com/wangchucheng/hugo-eureka/commit/04c91ff7eb3aed8b98715aa2435ba104182d1b2d)), closes [#176](https://github.com/wangchucheng/hugo-eureka/issues/176)
+
+### Features
+
+- add configurable colors and fonts ([54009e0](https://github.com/wangchucheng/hugo-eureka/commit/54009e0f91ea38f8d566636fc7b7488dd762a1e9))
+
 ## 0.9.1 (2022-03-09)
 
 ### Bug Fixes
