@@ -13,6 +13,12 @@ draft: false
 weight: 7
 ---
 
+## 0.9.3 (2022-06-01)
+
+### Bug Fixes
+
+- update resource cache for Hugo 0.100 ([749f68c](https://github.com/wangchucheng/hugo-eureka/commit/749f68cfef98e04dd40542e7d298d87648009a6f))
+
 ## 0.9.2 (2022-05-27)
 
 ### Bug Fixes

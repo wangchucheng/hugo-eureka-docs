@@ -1,14 +1,14 @@
 ---
 title: Getting Started
-description: ''
-summary: ''
+description: ""
+summary: ""
 toc: true
 authors: []
 tags: []
 categories: []
 series: []
-date: '2020-10-19T22:50:23+08:00'
-lastmod: '2020-10-19T22:50:23+08:00'
+date: "2020-10-19T22:50:23+08:00"
+lastmod: "2020-10-19T22:50:23+08:00"
 draft: false
 weight: 1
 ---
@@ -92,6 +92,8 @@ After completing the above steps, use the following command to preview the proje
 hugo server
 ```
 
+> If you encounter error like `Error: Error building site: POSTCSS: failed to transform "css/eureka.css" (text/css): resource "css/css/eureka.css_09b9b8e200b8c676e85ddca87a9596ca" not found in file cache`, please try to update Hugo to 0.100.0 or above.
+
 Drafts will not be deployed by Hugo, so you need to set the `draft` property of the content header to `false` or use `hugo server -D` to preview the website.
 
 If you are not familiar with the basic usage of Hugo or want to know more about Hugo, you can refer to [Hugo Basic Usage](https://gohugo.io/getting-started/usage/).
@@ -117,9 +119,9 @@ authors: []
 tags: []
 categories: []
 series: []
-date: '2020-10-20T10:30:48+08:00'
-lastmod: '2020-10-20T10:30:48+08:00'
-featuredImage: ''
+date: "2020-10-20T10:30:48+08:00"
+lastmod: "2020-10-20T10:30:48+08:00"
+featuredImage: ""
 draft: false
 ---
 ```
