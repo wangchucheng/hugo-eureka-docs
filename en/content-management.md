@@ -154,7 +154,7 @@ The author page has the following commonly used Front Matters:
 - **avatar(string)**: The author's avatar. For related operations, please refer to [Image Loading](#image-loading).
 - **organization(object)**: Author's current organization.
   - **name(string)**: Organization name.
-  - **url(stirng)**: Organization URL.
+  - **url(string)**: Organization URL.
 - **social(array)**: Social media information.
   - **icon(string)**: Social media name. Available icons can be checked on [Font Awesome](https://fontawesome.com/). After querying, you can get results similar to `<i class="fab fa-github"></i>`. The value of icon is github.
   - **iconPack(string)**: Social media package name. The value of iconPack is the fab in the previous item.
